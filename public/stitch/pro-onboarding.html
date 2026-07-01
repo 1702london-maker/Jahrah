@@ -141,7 +141,7 @@
 <span class="font-label-lg text-label-lg text-on-surface-variant uppercase tracking-widest">Pro Onboarding</span>
 </div>
 <div class="flex items-center gap-6">
-<a class="text-on-surface-variant hover:text-primary font-label-lg text-label-lg transition-colors" href="#">Help Center</a>
+<a class="text-on-surface-variant hover:text-primary font-label-lg text-label-lg transition-colors" href="/dashboard">Help Center</a>
 <button class="text-on-surface-variant font-label-lg text-label-lg px-4 py-2 hover:bg-surface-container rounded-full transition-all">Save & Exit</button>
 </div>
 </nav>
@@ -308,7 +308,7 @@
                         Next Step <span class="material-symbols-outlined">arrow_forward</span>
 </button>
 <div class="text-center">
-<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors underline decoration-outline-variant underline-offset-4" href="#">Save and continue later</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors underline decoration-outline-variant underline-offset-4" href="/dashboard">Save and continue later</a>
 </div>
 </div>
 </form>
@@ -319,9 +319,9 @@
 <div class="max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
 <p class="font-body-md text-body-md text-on-surface-variant">© 2024 JAHRAH. All rights reserved. Nigeria | Ghana | Kenya | South Africa | ₦ NGN</p>
 <div class="flex gap-8">
-<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" href="#">Privacy</a>
-<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" href="#">Terms</a>
-<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" href="#">Safety</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" href="/dashboard">Privacy</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" href="/dashboard">Terms</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" href="/dashboard">Safety</a>
 </div>
 </div>
 </footer>
@@ -340,4 +340,24 @@
             });
         });
     </script>
+<script id="jahrah-link-fallback">
+(function(){
+  const routes = {
+    'the eko loft':'/stays/1','azure sands cottage':'/stays/2','ikoyi zen suite':'/stays/3','kalakuta boutique':'/stays/4',
+    'chidi o.':'/pro/1','amaka b.':'/pro/2','tunde k.':'/pro/3','zainab a.':'/pro/4','kofi m.':'/pro/5',
+    'stays':'/stays','ride':'/ride','eats':'/eats','fix':'/fix','glow':'/glow','events':'/events','market':'/market',
+    'book now':'/booking-confirmed','reserve now':'/booking-confirmed','confirm booking':'/booking-confirmed','start planning':'/events','join as a pro':'/pro-onboarding','list your space':'/pro-onboarding','sign in / register':'/dashboard'
+  };
+  document.addEventListener('click', function(event){
+    const el = event.target.closest('a,button,[onclick],.cursor-pointer');
+    if (!el) return;
+    if (el.tagName === 'A' && el.getAttribute('href') && el.getAttribute('href') !== '#') return;
+    const text = (el.innerText || el.textContent || '').replace(/\s+/g, ' ').trim().toLowerCase();
+    const route = Object.keys(routes).find(key => text.includes(key));
+    if (!route) return;
+    event.preventDefault();
+    window.location.href = routes[route];
+  }, true);
+})();
+</script>
 </body></html>

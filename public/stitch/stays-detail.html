@@ -111,4 +111,24 @@
             vertical-align: middle;
         }
         .hide-scrollbar::-webkit-scrollbar { display: none; }
-        .hide-scrollbar { -ms-overflow-style: none</style></head><body></body></html>
+        .hide-scrollbar { -ms-overflow-style: none</style></head><body><script id="jahrah-link-fallback">
+(function(){
+  const routes = {
+    'the eko loft':'/stays/1','azure sands cottage':'/stays/2','ikoyi zen suite':'/stays/3','kalakuta boutique':'/stays/4',
+    'chidi o.':'/pro/1','amaka b.':'/pro/2','tunde k.':'/pro/3','zainab a.':'/pro/4','kofi m.':'/pro/5',
+    'stays':'/stays','ride':'/ride','eats':'/eats','fix':'/fix','glow':'/glow','events':'/events','market':'/market',
+    'book now':'/booking-confirmed','reserve now':'/booking-confirmed','confirm booking':'/booking-confirmed','start planning':'/events','join as a pro':'/pro-onboarding','list your space':'/pro-onboarding','sign in / register':'/dashboard'
+  };
+  document.addEventListener('click', function(event){
+    const el = event.target.closest('a,button,[onclick],.cursor-pointer');
+    if (!el) return;
+    if (el.tagName === 'A' && el.getAttribute('href') && el.getAttribute('href') !== '#') return;
+    const text = (el.innerText || el.textContent || '').replace(/\s+/g, ' ').trim().toLowerCase();
+    const route = Object.keys(routes).find(key => text.includes(key));
+    if (!route) return;
+    event.preventDefault();
+    window.location.href = routes[route];
+  }, true);
+})();
+</script>
+</body></html>
