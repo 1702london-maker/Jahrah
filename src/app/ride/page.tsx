@@ -18,7 +18,7 @@ const stitchHtml = `<!-- Top Navigation Bar (Shared Component) -->
 <div class="flex items-center gap-4">
 <span class="material-symbols-outlined text-on-surface-variant cursor-pointer">location_on</span>
 <span class="material-symbols-outlined text-on-surface-variant cursor-pointer">notifications</span>
-<button class="hidden lg:block font-label-lg text-label-lg text-primary font-semibold"onclick="window.location.href='/pro-onboarding'">List your space</button>
+<a href="/pro-onboarding" class="hidden lg:block font-label-lg text-label-lg text-primary font-semibold">List your space</a>
 <div class="h-10 w-10 rounded-full overflow-hidden border-2 border-primary-fixed">
 <img class="w-full h-full object-cover" data-alt="A professional close-up portrait of a stylish African man in business-casual attire, with a warm smile and sharp grooming, set against a blurred urban background with warm evening lighting. High-end lifestyle photography, rich contrast, and sharp focus." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDDSPXyAJlCnjyrQd3j8r-VJRUSYu3lAqKzi35tlSWjruT9rHsR8oyZKKcQ9meBCe6BjHeEz-SGbdPywu76UNMMoz9pKzbPcH1u3DT6P2tLEr-N51M-WgVPyLg46TM08MjFAdwnlJYqh__ShEuCLX16QaC4qKezzw7Rn9xAb-OnAidBO3fumGMZuG6x-drAnvOLsSB_Oofr5Ib_euAXVBtXAbJlI0fhdC4nsbTFCL-b3XRT8dIStT4xQb7B5xPS1of3jy1G4rq4F-8"/>
 </div>
@@ -89,7 +89,7 @@ const stitchHtml = `<!-- Top Navigation Bar (Shared Component) -->
 </button>
 </div>
 <!-- Quick Action -->
-<button class="w-full bg-sunset-orange text-white py-4 rounded-xl font-label-lg text-label-lg font-bold shadow-lg shadow-sunset-orange/20 active:scale-[0.98] transition-all" onclick="toggleStep()">
+<button class="w-full bg-sunset-orange text-white py-4 rounded-xl font-label-lg text-label-lg font-bold shadow-lg shadow-sunset-orange/20 active:scale-[0.98] transition-all">
                     Show Ride Options
                 </button>
 </div>
@@ -97,7 +97,7 @@ const stitchHtml = `<!-- Top Navigation Bar (Shared Component) -->
 <div class="hidden px-6 pb-6 overflow-y-auto no-scrollbar flex-grow" id="step-options">
 <div class="flex items-center justify-between mb-6">
 <h3 class="font-headline-md text-headline-md">Select your ride</h3>
-<button class="text-primary font-bold font-label-lg" onclick="toggleStep()">Edit route</button>
+<button class="text-primary font-bold font-label-lg">Edit route</button>
 </div>
 <div class="space-y-4">
 <!-- Ride Item -->
@@ -165,7 +165,7 @@ const stitchHtml = `<!-- Top Navigation Bar (Shared Component) -->
 <span class="material-symbols-outlined">chevron_right</span>
 </button>
 </div>
-<button class="w-full bg-sunset-orange text-white py-4 rounded-xl font-label-lg text-label-lg font-bold shadow-lg shadow-sunset-orange/20 active:scale-[0.98] transition-all" onclick="confirmRide()">
+<button class="w-full bg-sunset-orange text-white py-4 rounded-xl font-label-lg text-label-lg font-bold shadow-lg shadow-sunset-orange/20 active:scale-[0.98] transition-all">
                         Confirm JAHRAH Comfort
                     </button>
 </div>

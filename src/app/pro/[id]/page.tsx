@@ -62,7 +62,7 @@ const stitchHtml = `<!-- Top Navigation Bar -->
 </div>
 </div>
 <div class="flex gap-4">
-<button class="px-8 py-3 bg-sunset-orange text-white rounded-lg font-label-lg hover:scale-[1.02] transition-transform shadow-md">Book Now</button>
+<a href="/pro/1" class="px-8 py-3 bg-sunset-orange text-white rounded-lg font-label-lg hover:scale-[1.02] transition-transform shadow-md">Book Now</a>
 <button class="px-8 py-3 border-2 border-forest-deep text-forest-deep rounded-lg font-label-lg hover:bg-forest-deep/5 transition-colors">Message</button>
 </div>
 </div>

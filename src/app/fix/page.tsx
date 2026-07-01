@@ -18,8 +18,8 @@ const stitchHtml = `<!-- Top Navigation Bar -->
 <div class="flex items-center gap-4">
 <span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary transition-all">location_on</span>
 <span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary transition-all">notifications</span>
-<button class="hidden lg:block font-label-lg text-label-lg text-primary hover:underline"onclick="window.location.href='/pro-onboarding'">List your space</button>
-<button class="bg-primary text-on-primary px-6 py-2 rounded-full font-label-lg text-label-lg transition-transform active:scale-95"onclick="window.location.href='/dashboard'">Sign in / Register</button>
+<a href="/pro-onboarding" class="hidden lg:block font-label-lg text-label-lg text-primary hover:underline">List your space</a>
+<a href="/dashboard" class="bg-primary text-on-primary px-6 py-2 rounded-full font-label-lg text-label-lg transition-transform active:scale-95">Sign in / Register</a>
 </div>
 </nav>
 </header>
@@ -192,7 +192,7 @@ const stitchHtml = `<!-- Top Navigation Bar -->
 <span class="bg-surface-container px-3 py-1 rounded-full text-[12px] font-semibold text-secondary">VERIFIED</span>
 <span class="bg-surface-container px-3 py-1 rounded-full text-[12px] font-semibold text-royal-indigo">TOP PRO</span>
 </div>
-<button class="w-full border-2 border-primary text-primary py-3 rounded-lg font-label-lg hover:bg-primary hover:text-on-primary transition-all">Book Now</button>
+<a href="/pro/1" class="w-full border-2 border-primary text-primary py-3 rounded-lg font-label-lg hover:bg-primary hover:text-on-primary transition-all">Book Now</a>
 </div>
 </div>
 <!-- Pro Card 2 -->
@@ -211,7 +211,7 @@ const stitchHtml = `<!-- Top Navigation Bar -->
 <span class="bg-surface-container px-3 py-1 rounded-full text-[12px] font-semibold text-secondary">VERIFIED</span>
 <span class="bg-surface-container px-3 py-1 rounded-full text-[12px] font-semibold text-royal-indigo">QUICK RESPONDER</span>
 </div>
-<button class="w-full border-2 border-primary text-primary py-3 rounded-lg font-label-lg hover:bg-primary hover:text-on-primary transition-all">Book Now</button>
+<a href="/pro/1" class="w-full border-2 border-primary text-primary py-3 rounded-lg font-label-lg hover:bg-primary hover:text-on-primary transition-all">Book Now</a>
 </div>
 </div>
 <!-- Pro Card 3 -->
@@ -230,7 +230,7 @@ const stitchHtml = `<!-- Top Navigation Bar -->
 <span class="bg-surface-container px-3 py-1 rounded-full text-[12px] font-semibold text-secondary">VERIFIED</span>
 <span class="bg-surface-container px-3 py-1 rounded-full text-[12px] font-semibold text-royal-indigo">EQUIPMENT INCLUDED</span>
 </div>
-<button class="w-full border-2 border-primary text-primary py-3 rounded-lg font-label-lg hover:bg-primary hover:text-on-primary transition-all">Book Now</button>
+<a href="/pro/1" class="w-full border-2 border-primary text-primary py-3 rounded-lg font-label-lg hover:bg-primary hover:text-on-primary transition-all">Book Now</a>
 </div>
 </div>
 <!-- Pro Card 4 -->
@@ -248,7 +248,7 @@ const stitchHtml = `<!-- Top Navigation Bar -->
 <div class="flex flex-wrap gap-2 mb-6">
 <span class="bg-surface-container px-3 py-1 rounded-full text-[12px] font-semibold text-secondary">VERIFIED</span>
 </div>
-<button class="w-full border-2 border-primary text-primary py-3 rounded-lg font-label-lg hover:bg-primary hover:text-on-primary transition-all">Book Now</button>
+<a href="/pro/1" class="w-full border-2 border-primary text-primary py-3 rounded-lg font-label-lg hover:bg-primary hover:text-on-primary transition-all">Book Now</a>
 </div>
 </div>
 </div>

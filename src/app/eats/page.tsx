@@ -20,8 +20,8 @@ const stitchHtml = `<!-- TopNavBar -->
 <span class="material-symbols-outlined cursor-pointer hover:text-primary transition-all">location_on</span>
 <span class="material-symbols-outlined cursor-pointer hover:text-primary transition-all">notifications</span>
 </div>
-<button class="hidden lg:block text-primary font-label-lg text-label-lg hover:underline transition-all"onclick="window.location.href='/pro-onboarding'">List your space</button>
-<button class="bg-primary text-on-primary px-6 py-2 rounded-full font-label-lg text-label-lg hover:scale-95 transition-transform duration-200"onclick="window.location.href='/dashboard'">Sign in / Register</button>
+<a href="/pro-onboarding" class="hidden lg:block text-primary font-label-lg text-label-lg hover:underline transition-all">List your space</a>
+<a href="/dashboard" class="bg-primary text-on-primary px-6 py-2 rounded-full font-label-lg text-label-lg hover:scale-95 transition-transform duration-200">Sign in / Register</a>
 </div>
 </div>
 </header>
@@ -38,10 +38,10 @@ const stitchHtml = `<!-- TopNavBar -->
 </div>
 <!-- Tab Toggle -->
 <div class="bg-surface-container-high p-1 rounded-full flex relative overflow-hidden w-full md:w-auto min-w-[320px]">
-<button class="relative z-10 flex-1 px-6 py-3 font-label-lg text-label-lg text-on-primary transition-colors duration-300" id="btn-delivery" onclick="toggleView('delivery')">
+<button class="relative z-10 flex-1 px-6 py-3 font-label-lg text-label-lg text-on-primary transition-colors duration-300" id="btn-delivery">
                     Restaurant Delivery
                 </button>
-<button class="relative z-10 flex-1 px-6 py-3 font-label-lg text-label-lg text-on-surface-variant transition-colors duration-300" id="btn-chef" onclick="toggleView('chef')">
+<button class="relative z-10 flex-1 px-6 py-3 font-label-lg text-label-lg text-on-surface-variant transition-colors duration-300" id="btn-chef">
                     Book a Private Chef
                 </button>
 <div class="absolute top-1 left-1 bottom-1 w-[calc(50%-4px)] bg-sunset-orange rounded-full active-tab-indicator" id="tab-pill"></div>

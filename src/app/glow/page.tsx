@@ -19,7 +19,7 @@ const stitchHtml = `<!-- Top Navigation Bar -->
 <span class="material-symbols-outlined text-on-surface-variant hover:text-primary cursor-pointer transition-all">location_on</span>
 <span class="material-symbols-outlined text-on-surface-variant hover:text-primary cursor-pointer transition-all">notifications</span>
 </div>
-<button class="bg-primary-container text-on-primary px-6 py-2 rounded-full font-label-lg text-label-lg hover:bg-primary transition-all active:scale-95"onclick="window.location.href='/dashboard'">Sign in / Register</button>
+<a href="/dashboard" class="bg-primary-container text-on-primary px-6 py-2 rounded-full font-label-lg text-label-lg hover:bg-primary transition-all active:scale-95">Sign in / Register</a>
 </div>
 </nav>
 </header>
@@ -115,7 +115,7 @@ const stitchHtml = `<!-- Top Navigation Bar -->
 <span class="block text-[12px] text-on-surface-variant uppercase font-bold">Starts from</span>
 <span class="font-price-display text-price-display text-primary">â‚¦ 45,000</span>
 </div>
-<button class="bg-primary text-on-primary px-8 py-3 rounded-xl font-label-lg text-label-lg hover:shadow-lg transition-all active:scale-95">Book Now</button>
+<a href="/pro/1" class="bg-primary text-on-primary px-8 py-3 rounded-xl font-label-lg text-label-lg hover:shadow-lg transition-all active:scale-95">Book Now</a>
 </div>
 </div>
 </div>
@@ -144,7 +144,7 @@ const stitchHtml = `<!-- Top Navigation Bar -->
 <span class="block text-[12px] text-on-surface-variant uppercase font-bold">Starts from</span>
 <span class="font-price-display text-price-display text-primary">â‚¦ 15,000</span>
 </div>
-<button class="bg-primary text-on-primary px-8 py-3 rounded-xl font-label-lg text-label-lg hover:shadow-lg transition-all active:scale-95">Book Now</button>
+<a href="/pro/1" class="bg-primary text-on-primary px-8 py-3 rounded-xl font-label-lg text-label-lg hover:shadow-lg transition-all active:scale-95">Book Now</a>
 </div>
 </div>
 </div>

@@ -18,7 +18,7 @@ const stitchHtml = `<!-- TopNavBar -->
 <span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary">location_on</span>
 <span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary">notifications</span>
 </div>
-<button class="bg-primary text-on-primary px-6 py-2 rounded-full font-label-lg text-label-lg transition-transform active:scale-95"onclick="window.location.href='/dashboard'">Sign in / Register</button>
+<a href="/dashboard" class="bg-primary text-on-primary px-6 py-2 rounded-full font-label-lg text-label-lg transition-transform active:scale-95">Sign in / Register</a>
 </div>
 </div>
 </nav>

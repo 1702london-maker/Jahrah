@@ -21,8 +21,8 @@ const stitchHtml = `<!-- TopNavBar -->
 <span class="material-symbols-outlined hover:text-primary cursor-pointer transition-all">notifications</span>
 </div>
 <div class="hidden lg:flex items-center gap-4">
-<button class="font-label-lg text-label-lg text-primary hover:opacity-80 transition-opacity"onclick="window.location.href='/pro-onboarding'">List your space</button>
-<button class="bg-primary text-on-primary px-6 py-3 rounded-lg font-label-lg text-label-lg hover:scale-95 transition-transform"onclick="window.location.href='/dashboard'">Sign in / Register</button>
+<a href="/pro-onboarding" class="font-label-lg text-label-lg text-primary hover:opacity-80 transition-opacity">List your space</a>
+<a href="/dashboard" class="bg-primary text-on-primary px-6 py-3 rounded-lg font-label-lg text-label-lg hover:scale-95 transition-transform">Sign in / Register</a>
 </div>
 </div>
 </div>
@@ -76,7 +76,7 @@ const stitchHtml = `<!-- TopNavBar -->
 <div class="w-full lg:w-[40%] overflow-y-auto custom-scrollbar px-margin-desktop py-8 bg-parchment">
 <div class="flex flex-col gap-8">
 <!-- Property Card 1 -->
-<div class="group relative flex flex-col gap-4 p-4 bg-surface rounded-lg shadow-sm hover:shadow-md transition-all cursor-pointer border border-transparent hover:border-outline-variant active:scale-[0.99]" onclick="highlightPin(1)">
+<div class="group relative flex flex-col gap-4 p-4 bg-surface rounded-lg shadow-sm hover:shadow-md transition-all cursor-pointer border border-transparent hover:border-outline-variant active:scale-[0.99]">
 <div class="relative w-full aspect-square overflow-hidden rounded-lg">
 <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A luxury contemporary loft in Lagos, Nigeria with floor-to-ceiling windows overlooking the Victoria Island skyline. The interior is decorated with high-end African artisanal textiles and sleek minimalist furniture. Warm sunset light floods the room, highlighting the polished concrete floors and premium finishings. Professional architectural photography style with a warm, inviting atmosphere." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA7o29L38dpMmR3YKmHwnzyulvYvYQo_jwaBUm46_u6UPs1R9eEWyDCzu9rrEq0R0Dd48WCmfzQEbTuDxacs6t5xQfjjsHyahjKx8KkvUpte1gsmrjiWKSDs0xekLCkO1yKMotY1cUe2vKSh4-XIGZ9tim8IBo3L6Uwu19bXJO1OWjPBBUd-d4_7GHOiFDbVQfISIt0jkCjcKQ-NuBY74cv4RWaScnXcfAC5bId2_vRDuK84e625wlxCz3KLRbp8qNeDjMGOZ92R2g"/>
 <div class="absolute top-4 left-4 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full flex items-center gap-1 shadow-sm">
@@ -114,7 +114,7 @@ const stitchHtml = `<!-- TopNavBar -->
 </div>
 </div>
 <!-- Property Card 2 -->
-<div class="group relative flex flex-col gap-4 p-4 bg-surface rounded-lg shadow-sm hover:shadow-md transition-all cursor-pointer border border-transparent hover:border-outline-variant active:scale-[0.99]" onclick="highlightPin(2)">
+<div class="group relative flex flex-col gap-4 p-4 bg-surface rounded-lg shadow-sm hover:shadow-md transition-all cursor-pointer border border-transparent hover:border-outline-variant active:scale-[0.99]">
 <div class="relative w-full aspect-square overflow-hidden rounded-lg">
 <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A serene boutique villa in Ikoyi, Lagos, surrounded by lush tropical greenery and palm trees. The architecture features traditional terracotta elements blended with modern glass walls. Soft morning light creates gentle shadows on the stone pathway leading to a private terrace. The mood is tranquil, exclusive, and peaceful, embodying a luxury retreat in the city." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDq_Kmn-nHYQ8HJGYDk-ZDx7jWgV4d08lywHwga34NZMvxWVl7QEt2ZqIYP5UunhKmzf5AkwMdySs7aFU0LRklBl_tDfiP9B6Sgy03SeCt8O6jB_aBWoXde6SwIql_te8cKCi9d1DxlQRNxdVGF4UyxyAY8adkqn1OSQ4niT8YEhpZ5isc-xoG2FYkPsRIaI-5YVmSV2kdW-ER5LKe_PBQRqnt-dKxp7_Y4JfQ7w7JcCXmNRj61ckXBCPx4R1KBxQCJ9LitPNFIM2U"/>
 <div class="absolute top-4 left-4 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full flex items-center gap-1 shadow-sm">
@@ -151,7 +151,7 @@ const stitchHtml = `<!-- TopNavBar -->
 </div>
 </div>
 <!-- Property Card 3 -->
-<div class="group relative flex flex-col gap-4 p-4 bg-surface rounded-lg shadow-sm hover:shadow-md transition-all cursor-pointer border border-transparent hover:border-outline-variant active:scale-[0.99]" onclick="highlightPin(3)">
+<div class="group relative flex flex-col gap-4 p-4 bg-surface rounded-lg shadow-sm hover:shadow-md transition-all cursor-pointer border border-transparent hover:border-outline-variant active:scale-[0.99]">
 <div class="relative w-full aspect-square overflow-hidden rounded-lg">
 <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110" data-alt="A trendy industrial-style loft located in the heart of Lekki Phase 1, Lagos. The space features exposed brick walls, leather seating, and bold African contemporary art. The lighting is moody and cinematic, with warm Edison bulbs creating a cozy evening glow. The image captures the energetic urban lifestyle of Lagos' most popular neighborhood." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOZWoq-AsuOCZpFEkTA3lDjAcyRQU5-I5WGAebRXI9T2M6PhQoykOe1Rb723b_ORvpKPMkWx5ckIzoUqsaQbKD5X-3Mx4dd1tq_gG8UE5sPPKo665JHHw1RWnRO7nw8WEMf3z_21F8DVTsvJuMI3RG_qXCN2rJhs_zlEfWQITAdECsBOr0Q1OcpOpxIyjGKmDruwolKrDrgJp3-CsD_P5vhU-yVnAXKdJDrWsOuzB0jEzIFOLZSRXmZ0EDJj6ohHKKbUqHeUyqS4A"/>
 <div class="absolute top-4 left-4 bg-white/90 backdrop-blur-md px-3 py-1 rounded-full flex items-center gap-1 shadow-sm">

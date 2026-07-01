@@ -49,10 +49,7 @@ const stitchHtml = `<!-- TopNavBar -->
 <span class="material-symbols-outlined text-outline mr-2">calendar_today</span>
 <input class="w-full border-none focus:ring-0 bg-transparent text-on-surface font-body-md" placeholder="When?" type="text"/>
 </div>
-<button class="bg-sunset-orange text-white px-8 py-4 rounded-full font-label-lg text-label-lg hover:scale-95 transition-all w-full md:w-auto flex items-center justify-center gap-2">
-<span class="material-symbols-outlined">search</span>
-                    Search JAHRAH
-                </button>
+<a href="/stays" class="bg-sunset-orange text-white px-8 py-4 rounded-full font-label-lg text-label-lg hover:scale-95 transition-all w-full md:w-auto flex items-center justify-center gap-2"><span class="material-symbols-outlined">search</span> Search JAHRAH</a>
 </div>
 </div>
 </section>
@@ -213,7 +210,7 @@ const stitchHtml = `<!-- TopNavBar -->
 <span class="font-label-lg text-sm">4.9 (124)</span>
 </div>
 <div class="text-sm text-on-surface-variant mb-6">Starts from â‚¦ 15,000</div>
-<button class="w-full py-3 border border-sunset-orange text-sunset-orange rounded-full font-label-lg text-sm hover:bg-sunset-orange hover:text-white transition-all">Book Now</button>
+<a href="/pro/1" class="w-full py-3 border border-sunset-orange text-sunset-orange rounded-full font-label-lg text-sm hover:bg-sunset-orange hover:text-white transition-all">Book Now</a>
 </div>
 <!-- Repeating for 5 pros... -->
 <div class="min-w-[240px] bg-white p-8 rounded-xl premium-card-shadow text-center flex flex-col items-center">
@@ -230,7 +227,7 @@ const stitchHtml = `<!-- TopNavBar -->
 <span class="font-label-lg text-sm">5.0 (82)</span>
 </div>
 <div class="text-sm text-on-surface-variant mb-6">Starts from â‚¦ 25,000</div>
-<button class="w-full py-3 border border-sunset-orange text-sunset-orange rounded-full font-label-lg text-sm hover:bg-sunset-orange hover:text-white transition-all">Book Now</button>
+<a href="/pro/1" class="w-full py-3 border border-sunset-orange text-sunset-orange rounded-full font-label-lg text-sm hover:bg-sunset-orange hover:text-white transition-all">Book Now</a>
 </div>
 <div class="min-w-[240px] bg-white p-8 rounded-xl premium-card-shadow text-center flex flex-col items-center">
 <div class="relative mb-4">
@@ -246,7 +243,7 @@ const stitchHtml = `<!-- TopNavBar -->
 <span class="font-label-lg text-sm">4.7 (56)</span>
 </div>
 <div class="text-sm text-on-surface-variant mb-6">Starts from â‚¦ 12,000</div>
-<button class="w-full py-3 border border-sunset-orange text-sunset-orange rounded-full font-label-lg text-sm hover:bg-sunset-orange hover:text-white transition-all">Book Now</button>
+<a href="/pro/1" class="w-full py-3 border border-sunset-orange text-sunset-orange rounded-full font-label-lg text-sm hover:bg-sunset-orange hover:text-white transition-all">Book Now</a>
 </div>
 <div class="min-w-[240px] bg-white p-8 rounded-xl premium-card-shadow text-center flex flex-col items-center">
 <div class="relative mb-4">
@@ -262,7 +259,7 @@ const stitchHtml = `<!-- TopNavBar -->
 <span class="font-label-lg text-sm">4.8 (210)</span>
 </div>
 <div class="text-sm text-on-surface-variant mb-6">Starts from â‚¦ 8,000</div>
-<button class="w-full py-3 border border-sunset-orange text-sunset-orange rounded-full font-label-lg text-sm hover:bg-sunset-orange hover:text-white transition-all">Book Now</button>
+<a href="/pro/1" class="w-full py-3 border border-sunset-orange text-sunset-orange rounded-full font-label-lg text-sm hover:bg-sunset-orange hover:text-white transition-all">Book Now</a>
 </div>
 <div class="min-w-[240px] bg-white p-8 rounded-xl premium-card-shadow text-center flex flex-col items-center">
 <div class="relative mb-4">
@@ -278,7 +275,7 @@ const stitchHtml = `<!-- TopNavBar -->
 <span class="font-label-lg text-sm">4.9 (95)</span>
 </div>
 <div class="text-sm text-on-surface-variant mb-6">Starts from â‚¦ 20,000</div>
-<button class="w-full py-3 border border-sunset-orange text-sunset-orange rounded-full font-label-lg text-sm hover:bg-sunset-orange hover:text-white transition-all">Book Now</button>
+<a href="/pro/1" class="w-full py-3 border border-sunset-orange text-sunset-orange rounded-full font-label-lg text-sm hover:bg-sunset-orange hover:text-white transition-all">Book Now</a>
 </div>
 </div>
 </div>

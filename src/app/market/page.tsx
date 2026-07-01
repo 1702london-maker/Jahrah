@@ -27,7 +27,7 @@ const stitchHtml = `<!-- TopNavBar -->
 <img class="w-full h-full object-cover" data-alt="A clean, professional headshot of a stylish West African man in a minimalist office setting with soft natural lighting, reflecting a premium lifestyle aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCELg-v-1LC6Sh8_Lzm9Ht7DWygj2K1a9ZgdKOpsbJ-4g4bRp_wfIW2O1R7qdDYpVBoQ-LWrgYWacEpGCmbck7Tnv9rXGbbDXFKYiYljsAwTAefeFIhaJ-7D2X9PSjaQ0VH7Y4tvztZsFb07GxCu_dTYwEpc3UcgYuKNG617a2e-Cmf68jCqgTyq6nG9WJ7U7PiOGANCJdZKl36cwAetOiE-Jq22eyVgUVMe3E_iXCFfF_rPk9ubdeXpTiBTL68YQQ-z6SCQC63978"/>
 </div>
 </div>
-<button class="hidden md:block bg-primary text-on-primary px-6 py-2 rounded-full font-label-lg hover:scale-95 transition-transform"onclick="window.location.href='/dashboard'">Sign in / Register</button>
+<a href="/dashboard" class="hidden md:block bg-primary text-on-primary px-6 py-2 rounded-full font-label-lg hover:scale-95 transition-transform">Sign in / Register</a>
 </div>
 </div>
 </header>

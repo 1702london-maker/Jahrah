@@ -214,7 +214,7 @@ const stitchHtml = `<script id="tailwind-config">
 <p class="font-label-lg text-label-lg text-on-surface">WHERE DO YOU WORK?</p>
 <p class="text-sm text-on-surface-variant mt-1">Allow remote bookings or physical visits.</p>
 </div>
-<div class="relative inline-flex items-center cursor-pointer group" onclick="this.querySelector('div').classList.toggle('bg-forest-deep'); this.querySelector('span').classList.toggle('translate-x-6')">
+<div class="relative inline-flex items-center cursor-pointer group">
 <div class="w-12 h-6 bg-surface-container-highest rounded-full transition-colors duration-300"></div>
 <span class="absolute left-0 w-6 h-6 bg-white border border-outline-variant rounded-full transition-transform duration-300 translate-x-0 shadow-sm"></span>
 </div>
@@ -244,11 +244,11 @@ const stitchHtml = `<script id="tailwind-config">
 <div class="space-y-4">
 <label class="font-label-lg text-label-lg text-on-surface block uppercase">Years of Experience</label>
 <div class="flex items-center border-2 border-outline-variant rounded-xl overflow-hidden h-14">
-<button class="w-14 h-full flex items-center justify-center hover:bg-surface-container-high transition-colors text-on-surface" onclick="const input = this.nextElementSibling; input.value = Math.max(0, parseInt(input.value)-1)" type="button">
+<button class="w-14 h-full flex items-center justify-center hover:bg-surface-container-high transition-colors text-on-surface" type="button">
 <span class="material-symbols-outlined">remove</span>
 </button>
 <input class="flex-grow h-full text-center font-bold text-lg border-none focus:ring-0 bg-transparent" readonly="" type="number" value="5"/>
-<button class="w-14 h-full flex items-center justify-center hover:bg-surface-container-high transition-colors text-on-surface" onclick="const input = this.previousElementSibling; input.value = parseInt(input.value)+1" type="button">
+<button class="w-14 h-full flex items-center justify-center hover:bg-surface-container-high transition-colors text-on-surface" type="button">
 <span class="material-symbols-outlined">add</span>
 </button>
 </div>
