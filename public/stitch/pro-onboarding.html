@@ -1,6 +1,41 @@
-export const metadata = { title: "JAHRAH Pro Onboarding — Build Your Profile" }
+<!DOCTYPE html>
 
-const stitchHtml = `<script id="tailwind-config">
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>JAHRAH Pro Onboarding — Build Your Profile</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Montserrat:wght@400;600;700&family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&family=Playfair+Display:wght@100..900&display=swap" rel="stylesheet"/>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .step-active {
+            width: 100%;
+            transition: width 1s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        .custom-scrollbar::-webkit-scrollbar {
+            width: 4px;
+        }
+        .custom-scrollbar::-webkit-scrollbar-track {
+            background: transparent;
+        }
+        .custom-scrollbar::-webkit-scrollbar-thumb {
+            background: #e5e2e1;
+            border-radius: 10px;
+        }
+        /* Custom Stepper Hide Arrows */
+        input[type=number]::-webkit-inner-spin-button, 
+        input[type=number]::-webkit-outer-spin-button { 
+            -webkit-appearance: none; 
+            margin: 0; 
+        }
+    </style>
+</head>
+<body class="bg-surface font-body-md text-on-surface">
+<script id="tailwind-config">
         tailwind.config = {
           darkMode: "class",
           theme: {
@@ -304,8 +339,5 @@ const stitchHtml = `<script id="tailwind-config">
                 }
             });
         });
-    </script>`
-
-export default function ProOnboardingBuildYourProfilePage() {
-  return <div dangerouslySetInnerHTML={{ __html: stitchHtml }} />
-}
+    </script>
+</body></html>
