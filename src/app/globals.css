@@ -58,30 +58,32 @@
   --color-forest-deep: #004D00;
   --color-parchment: #FDFBF7;
 
-  /* ── Typography ── */
-  --font-family-headline-lg: "Playfair Display", Georgia, serif;
-  --font-family-display-lg: "Playfair Display", Georgia, serif;
-  --font-family-headline-md: "Playfair Display", Georgia, serif;
-  --font-family-price-display: Montserrat, sans-serif;
-  --font-family-label-lg: Montserrat, sans-serif;
-  --font-family-body-md: Montserrat, sans-serif;
-  --font-family-body-lg: Montserrat, sans-serif;
+  /* ── Typography — font-family (--font-* → font-* utility) ── */
+  --font-headline-lg: "Playfair Display", Georgia, serif;
+  --font-display-lg: "Playfair Display", Georgia, serif;
+  --font-headline-md: "Playfair Display", Georgia, serif;
+  --font-price-display: Montserrat, sans-serif;
+  --font-label-lg: Montserrat, sans-serif;
+  --font-body-md: Montserrat, sans-serif;
+  --font-body-lg: Montserrat, sans-serif;
 
-  --font-size-display-lg: 56px;
-  --font-size-headline-lg: 40px;
-  --font-size-headline-md: 28px;
-  --font-size-price-display: 24px;
-  --font-size-body-lg: 18px;
-  --font-size-body-md: 16px;
-  --font-size-label-lg: 14px;
+  /* ── Typography — font-size (--text-* → text-* utility) ── */
+  --text-display-lg: 56px;
+  --text-headline-lg: 40px;
+  --text-headline-md: 28px;
+  --text-price-display: 24px;
+  --text-body-lg: 18px;
+  --text-body-md: 16px;
+  --text-label-lg: 14px;
 
-  --line-height-display-lg: 64px;
-  --line-height-headline-lg: 48px;
-  --line-height-headline-md: 34px;
-  --line-height-price-display: 32px;
-  --line-height-body-lg: 28px;
-  --line-height-body-md: 24px;
-  --line-height-label-lg: 20px;
+  /* ── Line heights (--leading-* → leading-* utility) ── */
+  --leading-display-lg: 64px;
+  --leading-headline-lg: 48px;
+  --leading-headline-md: 34px;
+  --leading-price-display: 32px;
+  --leading-body-lg: 28px;
+  --leading-body-md: 24px;
+  --leading-label-lg: 20px;
 
   /* ── Spacing ── */
   --spacing-section-gap: 80px;
