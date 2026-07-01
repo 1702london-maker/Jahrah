@@ -4,7 +4,8 @@ const nextConfig: NextConfig = {
   async rewrites() {
     return {
       beforeFiles: [
-        { source: '/', destination: '/stitch/homepage.html' },
+        { source: '/', destination: '/stitch/country.html' },
+        { source: '/ng', destination: '/stitch/homepage.html' },
         { source: '/stays', destination: '/stitch/stays.html' },
         { source: '/stays/:id', destination: '/stitch/stays-detail.html' },
         { source: '/ride', destination: '/stitch/ride.html' },
