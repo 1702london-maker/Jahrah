@@ -1,4 +1,4 @@
-export const metadata = { title: "JAHRAH — App Home Screen" }
+﻿export const metadata = { title: "JAHRAH â€” App Home Screen" }
 
 const stitchHtml = `<!-- Header Section -->
 <header class="sticky top-0 z-50 bg-surface px-margin-mobile pt-6 pb-4">
@@ -98,7 +98,7 @@ const stitchHtml = `<!-- Header Section -->
 <div class="flex justify-between items-start mb-6">
 <div>
 <p class="font-label-lg text-white/70 uppercase tracking-widest text-[10px]">JAHRAH Wallet</p>
-<p class="font-price-display text-2xl mt-1">₦ 128,450.00</p>
+<p class="font-price-display text-2xl mt-1">â‚¦ 128,450.00</p>
 </div>
 <div class="bg-white/20 p-2 rounded-xl backdrop-blur-md">
 <span class="material-symbols-outlined text-white">account_balance_wallet</span>
@@ -130,7 +130,7 @@ const stitchHtml = `<!-- Header Section -->
 <h3 class="font-label-lg text-base text-on-surface mb-1">Skyline Loft</h3>
 <p class="text-on-surface-variant text-sm mb-3">Lekki Phase 1</p>
 <div class="flex justify-between items-center">
-<span class="font-price-display text-lg text-primary">₦ 75,000<span class="text-xs font-normal text-on-surface-variant">/night</span></span>
+<span class="font-price-display text-lg text-primary">â‚¦ 75,000<span class="text-xs font-normal text-on-surface-variant">/night</span></span>
 <button class="p-2 bg-surface-container rounded-full"><span class="material-symbols-outlined text-primary">favorite</span></button>
 </div>
 </div>
@@ -145,7 +145,7 @@ const stitchHtml = `<!-- Header Section -->
 <h3 class="font-label-lg text-base text-on-surface mb-1">Terra Kulture Resto</h3>
 <p class="text-on-surface-variant text-sm mb-3">Victoria Island</p>
 <div class="flex justify-between items-center">
-<span class="font-price-display text-lg text-primary">₦ 12,000<span class="text-xs font-normal text-on-surface-variant"> avg.</span></span>
+<span class="font-price-display text-lg text-primary">â‚¦ 12,000<span class="text-xs font-normal text-on-surface-variant"> avg.</span></span>
 <span class="material-symbols-outlined text-on-surface-variant">schedule</span>
 </div>
 </div>
@@ -159,7 +159,7 @@ const stitchHtml = `<!-- Header Section -->
 <h3 class="font-label-lg text-base text-on-surface mb-1">Lagos Jazz Night</h3>
 <p class="text-on-surface-variant text-sm mb-3">Eko Hotels &amp; Suites</p>
 <div class="flex justify-between items-center">
-<span class="font-price-display text-lg text-primary">₦ 25,000</span>
+<span class="font-price-display text-lg text-primary">â‚¦ 25,000</span>
 <span class="text-xs font-bold text-sunset-orange bg-sunset-orange/10 px-2 py-1 rounded">Tickets Selling Fast</span>
 </div>
 </div>
@@ -245,3 +245,4 @@ const stitchHtml = `<!-- Header Section -->
 export default function MobileAppHomeScreenPage() {
   return <div dangerouslySetInnerHTML={{ __html: stitchHtml }} />
 }
+

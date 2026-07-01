@@ -1,4 +1,4 @@
-export const metadata = { title: "JAHRAH Pro Dashboard — Earnings & Bookings" }
+﻿export const metadata = { title: "JAHRAH Pro Dashboard â€” Earnings & Bookings" }
 
 const stitchHtml = `<!-- Top Navigation Bar (Shared Component Strategy) -->
 <header class="bg-surface dark:bg-surface-dim shadow-sm docked full-width top-0 sticky z-50">
@@ -6,7 +6,7 @@ const stitchHtml = `<!-- Top Navigation Bar (Shared Component Strategy) -->
 <div class="flex items-center gap-8">
 <span class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed tracking-tight">JAHRAH</span>
 <nav class="hidden md:flex gap-6 items-center">
-<a class="font-label-lg text-label-lg text-primary font-bold border-b-2 border-primary pb-1" href="#">Pro Dashboard</a>
+<a class="font-label-lg text-label-lg text-primary font-bold border-b-2 border-primary pb-1" href="/pro-dashboard">Pro Dashboard</a>
 <a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" href="#">Academy</a>
 <a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" href="#">Community</a>
 </nav>
@@ -84,7 +84,7 @@ const stitchHtml = `<!-- Top Navigation Bar (Shared Component Strategy) -->
 <section class="flex flex-col md:flex-row md:items-end justify-between gap-6">
 <div>
 <h1 class="font-headline-lg text-headline-lg text-on-background">Welcome back, Amara</h1>
-<p class="text-on-surface-variant font-body-lg">Here’s what’s happening with your business today.</p>
+<p class="text-on-surface-variant font-body-lg">Hereâ€™s whatâ€™s happening with your business today.</p>
 </div>
 <div class="flex items-center gap-3">
 <button class="px-6 py-3 border border-forest-deep text-forest-deep rounded-lg font-label-lg hover:bg-forest-deep hover:text-white transition-all flex items-center gap-2">
@@ -101,7 +101,7 @@ const stitchHtml = `<!-- Top Navigation Bar (Shared Component Strategy) -->
 <div class="p-8 bg-surface-container rounded-xl shadow-sm border border-outline-variant/30 flex flex-col justify-between">
 <div>
 <p class="text-on-surface-variant font-label-lg">This Month's Earnings</p>
-<h2 class="font-price-display text-headline-lg mt-2 text-primary">₦ 342,000</h2>
+<h2 class="font-price-display text-headline-lg mt-2 text-primary">â‚¦ 342,000</h2>
 </div>
 <div class="mt-4 flex items-center gap-2 text-secondary font-bold text-sm">
 <span class="material-symbols-outlined !text-sm">trending_up</span>
@@ -167,11 +167,11 @@ const stitchHtml = `<!-- Top Navigation Bar (Shared Component Strategy) -->
 </div>
 <div>
 <h4 class="font-bold text-body-lg">Chioma Adeyemi</h4>
-<p class="text-on-surface-variant text-sm">Glow Ritual Spa Treatment • Victoria Island</p>
+<p class="text-on-surface-variant text-sm">Glow Ritual Spa Treatment â€¢ Victoria Island</p>
 </div>
 </div>
 <div class="text-right">
-<p class="font-price-display text-lg">₦ 45,000</p>
+<p class="font-price-display text-lg">â‚¦ 45,000</p>
 <span class="px-2 py-1 bg-secondary/10 text-secondary rounded text-[10px] font-bold uppercase">Confirmed</span>
 </div>
 </div>
@@ -199,11 +199,11 @@ const stitchHtml = `<!-- Top Navigation Bar (Shared Component Strategy) -->
 </div>
 <div>
 <h4 class="font-bold text-body-lg">Kofi Mensah</h4>
-<p class="text-on-surface-variant text-sm">Signature Glow Facial • Ikoyi</p>
+<p class="text-on-surface-variant text-sm">Signature Glow Facial â€¢ Ikoyi</p>
 </div>
 </div>
 <div class="text-right">
-<p class="font-price-display text-lg">₦ 32,500</p>
+<p class="font-price-display text-lg">â‚¦ 32,500</p>
 <span class="px-2 py-1 bg-tertiary/10 text-tertiary rounded text-[10px] font-bold uppercase">Pending</span>
 </div>
 </div>
@@ -225,24 +225,24 @@ const stitchHtml = `<!-- Top Navigation Bar (Shared Component Strategy) -->
 </select>
 </div>
 <div class="chart-container flex items-end justify-between gap-1 h-48 mb-8">
-<div class="w-full bg-primary-fixed hover:bg-primary transition-colors h-[40%] rounded-t-sm" title="₦ 12,000"></div>
-<div class="w-full bg-primary-fixed hover:bg-primary transition-colors h-[65%] rounded-t-sm" title="₦ 18,500"></div>
-<div class="w-full bg-primary-fixed hover:bg-primary transition-colors h-[50%] rounded-t-sm" title="₦ 15,000"></div>
-<div class="w-full bg-primary-fixed hover:bg-primary transition-colors h-[85%] rounded-t-sm" title="₦ 28,000"></div>
-<div class="w-full bg-primary-fixed hover:bg-primary transition-colors h-[45%] rounded-t-sm" title="₦ 13,000"></div>
-<div class="w-full bg-primary-fixed hover:bg-primary transition-colors h-[95%] rounded-t-sm" title="₦ 32,000"></div>
-<div class="w-full bg-primary-fixed hover:bg-primary transition-colors h-[70%] rounded-t-sm" title="₦ 21,000"></div>
-<div class="w-full bg-primary-fixed hover:bg-primary transition-colors h-[60%] rounded-t-sm" title="₦ 18,000"></div>
-<div class="w-full bg-primary-fixed hover:bg-primary transition-colors h-[75%] rounded-t-sm" title="₦ 22,000"></div>
-<div class="w-full bg-primary-fixed hover:bg-primary transition-colors h-[100%] rounded-t-sm" title="₦ 34,000"></div>
-<div class="w-full bg-primary-fixed hover:bg-primary transition-colors h-[80%] rounded-t-sm" title="₦ 26,000"></div>
-<div class="w-full bg-primary-fixed hover:bg-primary transition-colors h-[55%] rounded-t-sm" title="₦ 16,000"></div>
+<div class="w-full bg-primary-fixed hover:bg-primary transition-colors h-[40%] rounded-t-sm" title="â‚¦ 12,000"></div>
+<div class="w-full bg-primary-fixed hover:bg-primary transition-colors h-[65%] rounded-t-sm" title="â‚¦ 18,500"></div>
+<div class="w-full bg-primary-fixed hover:bg-primary transition-colors h-[50%] rounded-t-sm" title="â‚¦ 15,000"></div>
+<div class="w-full bg-primary-fixed hover:bg-primary transition-colors h-[85%] rounded-t-sm" title="â‚¦ 28,000"></div>
+<div class="w-full bg-primary-fixed hover:bg-primary transition-colors h-[45%] rounded-t-sm" title="â‚¦ 13,000"></div>
+<div class="w-full bg-primary-fixed hover:bg-primary transition-colors h-[95%] rounded-t-sm" title="â‚¦ 32,000"></div>
+<div class="w-full bg-primary-fixed hover:bg-primary transition-colors h-[70%] rounded-t-sm" title="â‚¦ 21,000"></div>
+<div class="w-full bg-primary-fixed hover:bg-primary transition-colors h-[60%] rounded-t-sm" title="â‚¦ 18,000"></div>
+<div class="w-full bg-primary-fixed hover:bg-primary transition-colors h-[75%] rounded-t-sm" title="â‚¦ 22,000"></div>
+<div class="w-full bg-primary-fixed hover:bg-primary transition-colors h-[100%] rounded-t-sm" title="â‚¦ 34,000"></div>
+<div class="w-full bg-primary-fixed hover:bg-primary transition-colors h-[80%] rounded-t-sm" title="â‚¦ 26,000"></div>
+<div class="w-full bg-primary-fixed hover:bg-primary transition-colors h-[55%] rounded-t-sm" title="â‚¦ 16,000"></div>
 </div>
 <div class="mt-auto space-y-4">
 <div class="p-4 bg-white rounded-lg border border-outline-variant/30 flex justify-between items-center">
 <div>
 <p class="text-xs text-on-surface-variant font-bold uppercase tracking-wider">Available for Payout</p>
-<p class="font-price-display text-2xl text-forest-deep">₦ 128,450</p>
+<p class="font-price-display text-2xl text-forest-deep">â‚¦ 128,450</p>
 </div>
 <span class="material-symbols-outlined text-forest-deep !text-3xl">account_balance_wallet</span>
 </div>
@@ -279,3 +279,4 @@ const stitchHtml = `<!-- Top Navigation Bar (Shared Component Strategy) -->
 export default function ProDashboardEarningsBookingsPage() {
   return <div dangerouslySetInnerHTML={{ __html: stitchHtml }} />
 }
+

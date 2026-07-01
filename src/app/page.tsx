@@ -1,25 +1,25 @@
-export const metadata = { title: "JAHRAH | The Pan-African Lifestyle Hub" }
+﻿export const metadata = { title: "JAHRAH | The Pan-African Lifestyle Hub" }
 
 const stitchHtml = `<!-- TopNavBar -->
 <nav class="bg-surface dark:bg-surface-dim shadow-sm docked full-width top-0 sticky z-50">
 <div class="flex justify-between items-center px-margin-desktop py-4 w-full max-w-container-max mx-auto">
 <div class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed">JAHRAH</div>
 <div class="hidden md:flex items-center gap-8">
-<a class="font-label-lg text-label-lg text-primary font-bold border-b-2 border-primary pb-1" href="#">Stays</a>
-<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" href="#">Ride</a>
-<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" href="#">Eats</a>
-<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" href="#">Fix</a>
-<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" href="#">Glow</a>
-<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" href="#">Events</a>
-<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" href="#">Market</a>
+<a class="font-label-lg text-label-lg text-primary font-bold border-b-2 border-primary pb-1" href="/stays">Stays</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" href="/ride">Ride</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" href="/eats">Eats</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" href="/fix">Fix</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" href="/glow">Glow</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" href="/events">Events</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" href="/market">Market</a>
 </div>
 <div class="flex items-center gap-6">
 <div class="flex gap-4 items-center">
 <span class="material-symbols-outlined text-on-surface-variant hover:text-primary cursor-pointer">location_on</span>
 <span class="material-symbols-outlined text-on-surface-variant hover:text-primary cursor-pointer">notifications</span>
 </div>
-<button class="font-label-lg text-label-lg text-primary hover:opacity-80 hidden lg:block">List your space</button>
-<button class="bg-sunset-orange text-white px-6 py-2 rounded-full font-label-lg text-label-lg hover:scale-95 transition-all">Sign in / Register</button>
+<button class="font-label-lg text-label-lg text-primary hover:opacity-80 hidden lg:block"onclick="window.location.href='/pro-onboarding'">List your space</button>
+<button class="bg-sunset-orange text-white px-6 py-2 rounded-full font-label-lg text-label-lg hover:scale-95 transition-all"onclick="window.location.href='/dashboard'">Sign in / Register</button>
 </div>
 </div>
 </nav>
@@ -107,7 +107,7 @@ const stitchHtml = `<!-- TopNavBar -->
 <section class="py-section-gap max-w-container-max mx-auto px-margin-desktop">
 <div class="flex justify-between items-end mb-8">
 <h2 class="font-headline-lg text-headline-lg">Top Stays in Lagos</h2>
-<a class="text-primary font-label-lg text-label-lg hover:underline" href="#">View all</a>
+<a class="text-primary font-label-lg text-label-lg hover:underline" href="/stays">View all</a>
 </div>
 <div class="flex gap-gutter overflow-x-auto hide-scrollbar pb-8">
 <!-- Property Card 1 -->
@@ -121,14 +121,14 @@ const stitchHtml = `<!-- TopNavBar -->
 </div>
 <div class="p-6">
 <div class="flex justify-between items-start mb-2">
-<h3 class="font-headline-md text-xl">The Eko Loft</h3>
+<h3 class="font-headline-md text-xl"onclick="window.location.href='/stays/1'" style="cursor:pointer">The Eko Loft</h3>
 <div class="flex items-center gap-1">
 <span class="material-symbols-outlined text-gold-leaf text-lg">star</span>
 <span class="font-label-lg text-sm">4.9</span>
 </div>
 </div>
 <p class="text-on-surface-variant mb-4">Victoria Island, Lagos</p>
-<div class="font-price-display text-primary text-xl">₦ 125,000 <span class="text-on-surface-variant text-sm font-normal">/ night</span></div>
+<div class="font-price-display text-primary text-xl">â‚¦ 125,000 <span class="text-on-surface-variant text-sm font-normal">/ night</span></div>
 </div>
 </div>
 <!-- Additional property cards would follow similar structure... (4 total as requested) -->
@@ -141,14 +141,14 @@ const stitchHtml = `<!-- TopNavBar -->
 </div>
 <div class="p-6">
 <div class="flex justify-between items-start mb-2">
-<h3 class="font-headline-md text-xl">Azure Sands Cottage</h3>
+<h3 class="font-headline-md text-xl"onclick="window.location.href='/stays/2'" style="cursor:pointer">Azure Sands Cottage</h3>
 <div class="flex items-center gap-1">
 <span class="material-symbols-outlined text-gold-leaf text-lg">star</span>
 <span class="font-label-lg text-sm">4.8</span>
 </div>
 </div>
 <p class="text-on-surface-variant mb-4">Lekki Phase 1, Lagos</p>
-<div class="font-price-display text-primary text-xl">₦ 85,000 <span class="text-on-surface-variant text-sm font-normal">/ night</span></div>
+<div class="font-price-display text-primary text-xl">â‚¦ 85,000 <span class="text-on-surface-variant text-sm font-normal">/ night</span></div>
 </div>
 </div>
 <!-- More Property Cards -->
@@ -162,14 +162,14 @@ const stitchHtml = `<!-- TopNavBar -->
 </div>
 <div class="p-6">
 <div class="flex justify-between items-start mb-2">
-<h3 class="font-headline-md text-xl">Ikoyi Zen Suite</h3>
+<h3 class="font-headline-md text-xl"onclick="window.location.href='/stays/3'" style="cursor:pointer">Ikoyi Zen Suite</h3>
 <div class="flex items-center gap-1">
 <span class="material-symbols-outlined text-gold-leaf text-lg">star</span>
 <span class="font-label-lg text-sm">5.0</span>
 </div>
 </div>
 <p class="text-on-surface-variant mb-4">Ikoyi, Lagos</p>
-<div class="font-price-display text-primary text-xl">₦ 150,000 <span class="text-on-surface-variant text-sm font-normal">/ night</span></div>
+<div class="font-price-display text-primary text-xl">â‚¦ 150,000 <span class="text-on-surface-variant text-sm font-normal">/ night</span></div>
 </div>
 </div>
 <div class="min-w-[320px] bg-white rounded-lg premium-card-shadow overflow-hidden">
@@ -181,14 +181,14 @@ const stitchHtml = `<!-- TopNavBar -->
 </div>
 <div class="p-6">
 <div class="flex justify-between items-start mb-2">
-<h3 class="font-headline-md text-xl">Kalakuta Boutique</h3>
+<h3 class="font-headline-md text-xl"onclick="window.location.href='/stays/4'" style="cursor:pointer">Kalakuta Boutique</h3>
 <div class="flex items-center gap-1">
 <span class="material-symbols-outlined text-gold-leaf text-lg">star</span>
 <span class="font-label-lg text-sm">4.7</span>
 </div>
 </div>
 <p class="text-on-surface-variant mb-4">Ikeja, Lagos</p>
-<div class="font-price-display text-primary text-xl">₦ 45,000 <span class="text-on-surface-variant text-sm font-normal">/ night</span></div>
+<div class="font-price-display text-primary text-xl">â‚¦ 45,000 <span class="text-on-surface-variant text-sm font-normal">/ night</span></div>
 </div>
 </div>
 </div>
@@ -206,13 +206,13 @@ const stitchHtml = `<!-- TopNavBar -->
 <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">verified</span>
 </span>
 </div>
-<h3 class="font-headline-md text-lg mb-1">Chidi O.</h3>
+<h3 class="font-headline-md text-lg mb-1"onclick="window.location.href='/pro/1'" style="cursor:pointer">Chidi O.</h3>
 <p class="text-primary font-label-lg text-xs uppercase mb-2">Master Electrician</p>
 <div class="flex items-center gap-1 mb-4">
 <span class="material-symbols-outlined text-gold-leaf text-sm">star</span>
 <span class="font-label-lg text-sm">4.9 (124)</span>
 </div>
-<div class="text-sm text-on-surface-variant mb-6">Starts from ₦ 15,000</div>
+<div class="text-sm text-on-surface-variant mb-6">Starts from â‚¦ 15,000</div>
 <button class="w-full py-3 border border-sunset-orange text-sunset-orange rounded-full font-label-lg text-sm hover:bg-sunset-orange hover:text-white transition-all">Book Now</button>
 </div>
 <!-- Repeating for 5 pros... -->
@@ -223,13 +223,13 @@ const stitchHtml = `<!-- TopNavBar -->
 <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">verified</span>
 </span>
 </div>
-<h3 class="font-headline-md text-lg mb-1">Amaka B.</h3>
+<h3 class="font-headline-md text-lg mb-1"onclick="window.location.href='/pro/2'" style="cursor:pointer">Amaka B.</h3>
 <p class="text-primary font-label-lg text-xs uppercase mb-2">Makeup Artist</p>
 <div class="flex items-center gap-1 mb-4">
 <span class="material-symbols-outlined text-gold-leaf text-sm">star</span>
 <span class="font-label-lg text-sm">5.0 (82)</span>
 </div>
-<div class="text-sm text-on-surface-variant mb-6">Starts from ₦ 25,000</div>
+<div class="text-sm text-on-surface-variant mb-6">Starts from â‚¦ 25,000</div>
 <button class="w-full py-3 border border-sunset-orange text-sunset-orange rounded-full font-label-lg text-sm hover:bg-sunset-orange hover:text-white transition-all">Book Now</button>
 </div>
 <div class="min-w-[240px] bg-white p-8 rounded-xl premium-card-shadow text-center flex flex-col items-center">
@@ -239,13 +239,13 @@ const stitchHtml = `<!-- TopNavBar -->
 <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">verified</span>
 </span>
 </div>
-<h3 class="font-headline-md text-lg mb-1">Tunde K.</h3>
+<h3 class="font-headline-md text-lg mb-1"onclick="window.location.href='/pro/3'" style="cursor:pointer">Tunde K.</h3>
 <p class="text-primary font-label-lg text-xs uppercase mb-2">Expert Plumber</p>
 <div class="flex items-center gap-1 mb-4">
 <span class="material-symbols-outlined text-gold-leaf text-sm">star</span>
 <span class="font-label-lg text-sm">4.7 (56)</span>
 </div>
-<div class="text-sm text-on-surface-variant mb-6">Starts from ₦ 12,000</div>
+<div class="text-sm text-on-surface-variant mb-6">Starts from â‚¦ 12,000</div>
 <button class="w-full py-3 border border-sunset-orange text-sunset-orange rounded-full font-label-lg text-sm hover:bg-sunset-orange hover:text-white transition-all">Book Now</button>
 </div>
 <div class="min-w-[240px] bg-white p-8 rounded-xl premium-card-shadow text-center flex flex-col items-center">
@@ -255,13 +255,13 @@ const stitchHtml = `<!-- TopNavBar -->
 <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">verified</span>
 </span>
 </div>
-<h3 class="font-headline-md text-lg mb-1">Zainab A.</h3>
+<h3 class="font-headline-md text-lg mb-1"onclick="window.location.href='/pro/4'" style="cursor:pointer">Zainab A.</h3>
 <p class="text-primary font-label-lg text-xs uppercase mb-2">Home Specialist</p>
 <div class="flex items-center gap-1 mb-4">
 <span class="material-symbols-outlined text-gold-leaf text-sm">star</span>
 <span class="font-label-lg text-sm">4.8 (210)</span>
 </div>
-<div class="text-sm text-on-surface-variant mb-6">Starts from ₦ 8,000</div>
+<div class="text-sm text-on-surface-variant mb-6">Starts from â‚¦ 8,000</div>
 <button class="w-full py-3 border border-sunset-orange text-sunset-orange rounded-full font-label-lg text-sm hover:bg-sunset-orange hover:text-white transition-all">Book Now</button>
 </div>
 <div class="min-w-[240px] bg-white p-8 rounded-xl premium-card-shadow text-center flex flex-col items-center">
@@ -271,13 +271,13 @@ const stitchHtml = `<!-- TopNavBar -->
 <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">verified</span>
 </span>
 </div>
-<h3 class="font-headline-md text-lg mb-1">Kofi M.</h3>
+<h3 class="font-headline-md text-lg mb-1"onclick="window.location.href='/pro/5'" style="cursor:pointer">Kofi M.</h3>
 <p class="text-primary font-label-lg text-xs uppercase mb-2">Master Stylist</p>
 <div class="flex items-center gap-1 mb-4">
 <span class="material-symbols-outlined text-gold-leaf text-sm">star</span>
 <span class="font-label-lg text-sm">4.9 (95)</span>
 </div>
-<div class="text-sm text-on-surface-variant mb-6">Starts from ₦ 20,000</div>
+<div class="text-sm text-on-surface-variant mb-6">Starts from â‚¦ 20,000</div>
 <button class="w-full py-3 border border-sunset-orange text-sunset-orange rounded-full font-label-lg text-sm hover:bg-sunset-orange hover:text-white transition-all">Book Now</button>
 </div>
 </div>
@@ -295,7 +295,7 @@ const stitchHtml = `<!-- TopNavBar -->
 <h3 class="font-headline-md text-xl">Heritage Kitchen</h3>
 <div class="bg-surface-container-high px-2 py-1 rounded text-xs font-bold text-on-surface">35-45 min</div>
 </div>
-<p class="text-on-surface-variant text-sm mb-4">Contemporary Nigerian • ₦ 4,500 min</p>
+<p class="text-on-surface-variant text-sm mb-4">Contemporary Nigerian â€¢ â‚¦ 4,500 min</p>
 <div class="flex items-center gap-2">
 <span class="material-symbols-outlined text-gold-leaf text-sm">star</span>
 <span class="font-label-lg text-sm">4.6 (1.2k+)</span>
@@ -310,7 +310,7 @@ const stitchHtml = `<!-- TopNavBar -->
 <h3 class="font-headline-md text-xl">Umi Sushi Bar</h3>
 <div class="bg-surface-container-high px-2 py-1 rounded text-xs font-bold text-on-surface">25-35 min</div>
 </div>
-<p class="text-on-surface-variant text-sm mb-4">Japanese • ₦ 8,000 min</p>
+<p class="text-on-surface-variant text-sm mb-4">Japanese â€¢ â‚¦ 8,000 min</p>
 <div class="flex items-center gap-2">
 <span class="material-symbols-outlined text-gold-leaf text-sm">star</span>
 <span class="font-label-lg text-sm">4.8 (850+)</span>
@@ -325,7 +325,7 @@ const stitchHtml = `<!-- TopNavBar -->
 <h3 class="font-headline-md text-xl">The Grill Room</h3>
 <div class="bg-surface-container-high px-2 py-1 rounded text-xs font-bold text-on-surface">40-50 min</div>
 </div>
-<p class="text-on-surface-variant text-sm mb-4">Continental Grill • ₦ 12,000 min</p>
+<p class="text-on-surface-variant text-sm mb-4">Continental Grill â€¢ â‚¦ 12,000 min</p>
 <div class="flex items-center gap-2">
 <span class="material-symbols-outlined text-gold-leaf text-sm">star</span>
 <span class="font-label-lg text-sm">4.9 (430+)</span>
@@ -381,7 +381,7 @@ const stitchHtml = `<!-- TopNavBar -->
 <div class="absolute inset-0 bg-gradient-to-r from-royal-indigo/80 to-transparent flex flex-col justify-center px-12 text-white">
 <h2 class="font-display-lg text-4xl mb-4 max-w-md">Plan Your Next Event with Ease.</h2>
 <p class="font-body-lg mb-8 max-w-md opacity-90">From intimate gatherings to grand celebrations, JAHRAH connects you with the best planners and venues.</p>
-<button class="bg-white text-royal-indigo px-8 py-4 rounded-full font-label-lg text-label-lg hover:bg-sunset-orange hover:text-white transition-all w-fit">Start Planning</button>
+<button class="bg-white text-royal-indigo px-8 py-4 rounded-full font-label-lg text-label-lg hover:bg-sunset-orange hover:text-white transition-all w-fit"onclick="window.location.href='/events'">Start Planning</button>
 </div>
 </div>
 </section>
@@ -391,7 +391,7 @@ const stitchHtml = `<!-- TopNavBar -->
 <div class="md:w-1/2 p-16 flex flex-col justify-center">
 <h2 class="font-headline-lg text-headline-lg mb-6 text-primary">Your Skill, Your Schedule, Your Success.</h2>
 <p class="font-body-lg text-on-surface-variant mb-10">Join thousands of professionals across Africa growing their business on JAHRAH. Reach new customers and manage your workflow seamlessly.</p>
-<button class="bg-sunset-orange text-white px-10 py-5 rounded-full font-label-lg text-lg hover:scale-95 transition-all w-fit">Join as a Pro</button>
+<button class="bg-sunset-orange text-white px-10 py-5 rounded-full font-label-lg text-lg hover:scale-95 transition-all w-fit"onclick="window.location.href='/pro-onboarding'">Join as a Pro</button>
 </div>
 <div class="md:w-1/2 h-[500px]">
 <img class="w-full h-full object-cover" data-alt="A group of smiling, diverse African professionals standing together in a bright, modern office space. The group includes a female photographer, a male carpenter with tools, a chef in a white coat, and a female tech professional. They look confident, happy, and empowered, representing the community of JAHRAH Pros." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYQJa5RtIhOrNO3HKCc_mZur1PV-bQE7yz0QuE2zKw7Qg3kqmdTx7SWCIbXF3KNU-dlHGaiwIi3cfh_G6KQ788qRCoVi5CmkvHXkv02HqZoelOB5KnQkLiXUGGsISYZYjVSRYCPTyv88zjVFV6Gm5kbZa5XXClIKhHlWlKzrY2KojA4olVyRSoW0kVrU3FBAwo7BZXygmAcCdIgAxLGIqN4dPrvhQnnratHRKNDZrh9PVG8pMWm-C5_DDQkAZ16uDG8DcJB_HiUzs"/>
@@ -440,42 +440,42 @@ const stitchHtml = `<!-- TopNavBar -->
 <div>
 <h4 class="font-label-lg text-sm mb-6 uppercase tracking-wider text-primary">Company</h4>
 <ul class="space-y-4">
-<li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">About</a></li>
-<li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Story</a></li>
-<li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Careers</a></li>
-<li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Press</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors" href="/about">About</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors" href="/story">Story</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors" href="/careers">Careers</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors" href="/press">Press</a></li>
 </ul>
 </div>
 <div>
 <h4 class="font-label-lg text-sm mb-6 uppercase tracking-wider text-primary">Services</h4>
 <ul class="space-y-4">
-<li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Stays</a></li>
-<li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Ride</a></li>
-<li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Eats</a></li>
-<li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Fix</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors" href="/stays">Stays</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors" href="/ride">Ride</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors" href="/eats">Eats</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors" href="/fix">Fix</a></li>
 </ul>
 </div>
 <div>
 <h4 class="font-label-lg text-sm mb-6 uppercase tracking-wider text-primary">Pros</h4>
 <ul class="space-y-4">
-<li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Become a Pro</a></li>
-<li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Pro Dashboard</a></li>
-<li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Pro Academy</a></li>
-<li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Partner</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors" href="/pro-onboarding">Become a Pro</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors" href="/pro-dashboard">Pro Dashboard</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors" href="/pro-academy">Pro Academy</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors" href="/partner">Partner</a></li>
 </ul>
 </div>
 <div>
 <h4 class="font-label-lg text-sm mb-6 uppercase tracking-wider text-primary">Support</h4>
 <ul class="space-y-4">
-<li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Help Centre</a></li>
-<li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Safety Centre</a></li>
-<li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Cancellation Policy</a></li>
-<li><a class="text-on-surface-variant hover:text-primary transition-colors" href="#">Privacy</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors" href="/help">Help Centre</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors" href="/safety">Safety Centre</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors" href="/cancellation">Cancellation Policy</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors" href="/privacy">Privacy</a></li>
 </ul>
 </div>
 </div>
 <div class="pt-8 border-t border-outline-variant flex flex-col md:flex-row justify-between items-center gap-6">
-<p class="font-body-md text-on-surface-variant text-sm text-center md:text-left">© 2024 JAHRAH. All rights reserved. Nigeria | Ghana | Kenya | South Africa | ₦ NGN</p>
+<p class="font-body-md text-on-surface-variant text-sm text-center md:text-left">Â© 2024 JAHRAH. All rights reserved. Nigeria | Ghana | Kenya | South Africa | â‚¦ NGN</p>
 <div class="flex gap-6">
 <span class="material-symbols-outlined text-on-surface-variant hover:text-primary cursor-pointer">language</span>
 <span class="material-symbols-outlined text-on-surface-variant hover:text-primary cursor-pointer">share</span>
@@ -511,3 +511,4 @@ const stitchHtml = `<!-- TopNavBar -->
 export default function HomepagePage() {
   return <div dangerouslySetInnerHTML={{ __html: stitchHtml }} />
 }
+

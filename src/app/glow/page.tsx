@@ -1,4 +1,4 @@
-export const metadata = { title: "JAHRAH Glow | Premium Beauty Marketplace" }
+﻿export const metadata = { title: "JAHRAH Glow | Premium Beauty Marketplace" }
 
 const stitchHtml = `<!-- Top Navigation Bar -->
 <header class="bg-surface dark:bg-surface-dim shadow-sm docked full-width top-0 sticky z-50">
@@ -6,20 +6,20 @@ const stitchHtml = `<!-- Top Navigation Bar -->
 <div class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed tracking-tight">JAHRAH</div>
 <!-- Desktop Links -->
 <div class="hidden md:flex items-center gap-8">
-<a class="text-on-surface-variant hover:text-primary transition-colors font-label-lg text-label-lg" href="#">Stays</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors font-label-lg text-label-lg" href="#">Ride</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors font-label-lg text-label-lg" href="#">Eats</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors font-label-lg text-label-lg" href="#">Fix</a>
-<a class="text-primary font-bold border-b-2 border-primary pb-1 font-label-lg text-label-lg" href="#">Glow</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors font-label-lg text-label-lg" href="#">Events</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors font-label-lg text-label-lg" href="#">Market</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-lg text-label-lg" href="/stays">Stays</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-lg text-label-lg" href="/ride">Ride</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-lg text-label-lg" href="/eats">Eats</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-lg text-label-lg" href="/fix">Fix</a>
+<a class="text-primary font-bold border-b-2 border-primary pb-1 font-label-lg text-label-lg" href="/glow">Glow</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-lg text-label-lg" href="/events">Events</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-lg text-label-lg" href="/market">Market</a>
 </div>
 <div class="flex items-center gap-6">
 <div class="hidden lg:flex items-center gap-4">
 <span class="material-symbols-outlined text-on-surface-variant hover:text-primary cursor-pointer transition-all">location_on</span>
 <span class="material-symbols-outlined text-on-surface-variant hover:text-primary cursor-pointer transition-all">notifications</span>
 </div>
-<button class="bg-primary-container text-on-primary px-6 py-2 rounded-full font-label-lg text-label-lg hover:bg-primary transition-all active:scale-95">Sign in / Register</button>
+<button class="bg-primary-container text-on-primary px-6 py-2 rounded-full font-label-lg text-label-lg hover:bg-primary transition-all active:scale-95"onclick="window.location.href='/dashboard'">Sign in / Register</button>
 </div>
 </nav>
 </header>
@@ -102,7 +102,7 @@ const stitchHtml = `<!-- Top Navigation Bar -->
 <span class="material-symbols-outlined text-gold-leaf fill-icon text-[18px]">verified</span>
 </div>
 <h3 class="font-headline-md text-headline-md text-on-surface mb-1">Amara Nwosu</h3>
-<p class="font-label-lg text-label-lg text-outline mb-4">Master Makeup Artist • Lekki Phase 1</p>
+<p class="font-label-lg text-label-lg text-outline mb-4">Master Makeup Artist â€¢ Lekki Phase 1</p>
 <div class="flex items-center gap-1 mb-4">
 <span class="material-symbols-outlined text-gold-leaf fill-icon text-[16px]">star</span>
 <span class="font-bold text-on-surface">5.0</span>
@@ -113,7 +113,7 @@ const stitchHtml = `<!-- Top Navigation Bar -->
 <div class="flex items-center justify-between mt-6">
 <div>
 <span class="block text-[12px] text-on-surface-variant uppercase font-bold">Starts from</span>
-<span class="font-price-display text-price-display text-primary">₦ 45,000</span>
+<span class="font-price-display text-price-display text-primary">â‚¦ 45,000</span>
 </div>
 <button class="bg-primary text-on-primary px-8 py-3 rounded-xl font-label-lg text-label-lg hover:shadow-lg transition-all active:scale-95">Book Now</button>
 </div>
@@ -131,7 +131,7 @@ const stitchHtml = `<!-- Top Navigation Bar -->
 <span class="material-symbols-outlined text-gold-leaf fill-icon text-[18px]">verified</span>
 </div>
 <h3 class="font-headline-md text-headline-md text-on-surface mb-1">Kelechi 'Kay' Ade</h3>
-<p class="font-label-lg text-label-lg text-outline mb-4">Luxury Barber • Victoria Island</p>
+<p class="font-label-lg text-label-lg text-outline mb-4">Luxury Barber â€¢ Victoria Island</p>
 <div class="flex items-center gap-1 mb-4">
 <span class="material-symbols-outlined text-gold-leaf fill-icon text-[16px]">star</span>
 <span class="font-bold text-on-surface">4.9</span>
@@ -142,7 +142,7 @@ const stitchHtml = `<!-- Top Navigation Bar -->
 <div class="flex items-center justify-between mt-6">
 <div>
 <span class="block text-[12px] text-on-surface-variant uppercase font-bold">Starts from</span>
-<span class="font-price-display text-price-display text-primary">₦ 15,000</span>
+<span class="font-price-display text-price-display text-primary">â‚¦ 15,000</span>
 </div>
 <button class="bg-primary text-on-primary px-8 py-3 rounded-xl font-label-lg text-label-lg hover:shadow-lg transition-all active:scale-95">Book Now</button>
 </div>
@@ -197,12 +197,12 @@ const stitchHtml = `<!-- Top Navigation Bar -->
                                     </div>
                                     <div class="flex items-center gap-2 text-outline text-[12px] mb-6">
                                         <span class="material-symbols-outlined text-[16px]">location_on</span>
-                                        <span>Victoria Island • 2.4 km away</span>
+                                        <span>Victoria Island â€¢ 2.4 km away</span>
                                     </div>
                                     <div class="flex items-center justify-between border-t border-surface-container pt-6">
                                         <div>
                                             <span class="text-[12px] text-on-surface-variant block">From</span>
-                                            <span class="font-price-display text-[20px] text-primary">₦ \${pro.price}</span>
+                                            <span class="font-price-display text-[20px] text-primary">â‚¦ \${pro.price}</span>
                                         </div>
                                         <button class="bg-surface-tint/5 text-primary border border-primary/20 px-6 py-2 rounded-xl font-label-lg text-label-lg hover:bg-primary hover:text-white transition-all">Book</button>
                                     </div>
@@ -250,43 +250,43 @@ const stitchHtml = `<!-- Top Navigation Bar -->
 <div>
 <h5 class="font-label-lg text-label-lg text-on-surface mb-6 uppercase tracking-widest">Company</h5>
 <ul class="space-y-4 font-body-md text-body-md text-on-surface-variant">
-<li><a class="hover:text-primary transition-colors" href="#">About</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Story</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Careers</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Press</a></li>
+<li><a class="hover:text-primary transition-colors" href="/about">About</a></li>
+<li><a class="hover:text-primary transition-colors" href="/story">Story</a></li>
+<li><a class="hover:text-primary transition-colors" href="/careers">Careers</a></li>
+<li><a class="hover:text-primary transition-colors" href="/press">Press</a></li>
 </ul>
 </div>
 <div>
 <h5 class="font-label-lg text-label-lg text-on-surface mb-6 uppercase tracking-widest">Discover</h5>
 <ul class="space-y-4 font-body-md text-body-md text-on-surface-variant">
-<li><a class="hover:text-primary transition-colors" href="#">Stays</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Ride</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Eats</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Glow</a></li>
+<li><a class="hover:text-primary transition-colors" href="/stays">Stays</a></li>
+<li><a class="hover:text-primary transition-colors" href="/ride">Ride</a></li>
+<li><a class="hover:text-primary transition-colors" href="/eats">Eats</a></li>
+<li><a class="hover:text-primary transition-colors" href="/glow">Glow</a></li>
 </ul>
 </div>
 <div>
 <h5 class="font-label-lg text-label-lg text-on-surface mb-6 uppercase tracking-widest">For Pros</h5>
 <ul class="space-y-4 font-body-md text-body-md text-on-surface-variant">
-<li><a class="hover:text-primary transition-colors" href="#">Become a Pro</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Pro Dashboard</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Pro Academy</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Partner</a></li>
+<li><a class="hover:text-primary transition-colors" href="/pro-onboarding">Become a Pro</a></li>
+<li><a class="hover:text-primary transition-colors" href="/pro-dashboard">Pro Dashboard</a></li>
+<li><a class="hover:text-primary transition-colors" href="/pro-academy">Pro Academy</a></li>
+<li><a class="hover:text-primary transition-colors" href="/partner">Partner</a></li>
 </ul>
 </div>
 <div>
 <h5 class="font-label-lg text-label-lg text-on-surface mb-6 uppercase tracking-widest">Support</h5>
 <ul class="space-y-4 font-body-md text-body-md text-on-surface-variant">
-<li><a class="hover:text-primary transition-colors" href="#">Help Centre</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Safety Centre</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Privacy</a></li>
+<li><a class="hover:text-primary transition-colors" href="/help">Help Centre</a></li>
+<li><a class="hover:text-primary transition-colors" href="/safety">Safety Centre</a></li>
+<li><a class="hover:text-primary transition-colors" href="/privacy">Privacy</a></li>
 <li><a class="hover:text-primary transition-colors" href="#">Terms</a></li>
 </ul>
 </div>
 </div>
 <div class="pt-12 border-t border-outline-variant/30 flex flex-col md:flex-row justify-between items-center gap-6">
 <p class="font-body-md text-body-md text-on-surface-variant text-center md:text-left">
-                    © 2024 JAHRAH. All rights reserved. Nigeria | Ghana | Kenya | South Africa | ₦ NGN
+                    Â© 2024 JAHRAH. All rights reserved. Nigeria | Ghana | Kenya | South Africa | â‚¦ NGN
                 </p>
 <div class="flex items-center gap-8">
 <a class="text-on-surface-variant hover:text-primary transition-colors font-label-lg text-label-lg" href="#">Privacy Policy</a>
@@ -324,3 +324,4 @@ const stitchHtml = `<!-- Top Navigation Bar -->
 export default function GlowBeautyProfessionalsPage() {
   return <div dangerouslySetInnerHTML={{ __html: stitchHtml }} />
 }
+

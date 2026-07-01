@@ -1,4 +1,4 @@
-export const metadata = { title: "JAHRAH RIDE — Book a Trip" }
+﻿export const metadata = { title: "JAHRAH RIDE â€” Book a Trip" }
 
 const stitchHtml = `<!-- Top Navigation Bar (Shared Component) -->
 <header class="bg-surface dark:bg-surface-dim shadow-sm docked full-width top-0 sticky z-50">
@@ -6,19 +6,19 @@ const stitchHtml = `<!-- Top Navigation Bar (Shared Component) -->
 <div class="flex items-center gap-8">
 <span class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed">JAHRAH</span>
 <div class="hidden md:flex items-center gap-6">
-<a class="text-on-surface-variant hover:text-primary transition-colors font-label-lg text-label-lg" href="#">Stays</a>
-<a class="text-primary font-bold border-b-2 border-primary pb-1 font-label-lg text-label-lg" href="#">Ride</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors font-label-lg text-label-lg" href="#">Eats</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors font-label-lg text-label-lg" href="#">Fix</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors font-label-lg text-label-lg" href="#">Glow</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors font-label-lg text-label-lg" href="#">Events</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors font-label-lg text-label-lg" href="#">Market</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-lg text-label-lg" href="/stays">Stays</a>
+<a class="text-primary font-bold border-b-2 border-primary pb-1 font-label-lg text-label-lg" href="/ride">Ride</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-lg text-label-lg" href="/eats">Eats</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-lg text-label-lg" href="/fix">Fix</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-lg text-label-lg" href="/glow">Glow</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-lg text-label-lg" href="/events">Events</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-lg text-label-lg" href="/market">Market</a>
 </div>
 </div>
 <div class="flex items-center gap-4">
 <span class="material-symbols-outlined text-on-surface-variant cursor-pointer">location_on</span>
 <span class="material-symbols-outlined text-on-surface-variant cursor-pointer">notifications</span>
-<button class="hidden lg:block font-label-lg text-label-lg text-primary font-semibold">List your space</button>
+<button class="hidden lg:block font-label-lg text-label-lg text-primary font-semibold"onclick="window.location.href='/pro-onboarding'">List your space</button>
 <div class="h-10 w-10 rounded-full overflow-hidden border-2 border-primary-fixed">
 <img class="w-full h-full object-cover" data-alt="A professional close-up portrait of a stylish African man in business-casual attire, with a warm smile and sharp grooming, set against a blurred urban background with warm evening lighting. High-end lifestyle photography, rich contrast, and sharp focus." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDDSPXyAJlCnjyrQd3j8r-VJRUSYu3lAqKzi35tlSWjruT9rHsR8oyZKKcQ9meBCe6BjHeEz-SGbdPywu76UNMMoz9pKzbPcH1u3DT6P2tLEr-N51M-WgVPyLg46TM08MjFAdwnlJYqh__ShEuCLX16QaC4qKezzw7Rn9xAb-OnAidBO3fumGMZuG6x-drAnvOLsSB_Oofr5Ib_euAXVBtXAbJlI0fhdC4nsbTFCL-b3XRT8dIStT4xQb7B5xPS1of3jy1G4rq4F-8"/>
 </div>
@@ -108,7 +108,7 @@ const stitchHtml = `<!-- Top Navigation Bar (Shared Component) -->
 <div class="flex-grow">
 <div class="flex justify-between items-center">
 <span class="font-bold text-body-lg">JAHRAH Go</span>
-<span class="font-price-display text-price-display">₦ 2,400</span>
+<span class="font-price-display text-price-display">â‚¦ 2,400</span>
 </div>
 <div class="flex justify-between items-center text-on-surface-variant text-label-lg">
 <span>Fast, affordable everyday trips</span>
@@ -124,7 +124,7 @@ const stitchHtml = `<!-- Top Navigation Bar (Shared Component) -->
 <div class="flex-grow">
 <div class="flex justify-between items-center">
 <span class="font-bold text-body-lg">JAHRAH Comfort</span>
-<span class="font-price-display text-price-display">₦ 3,850</span>
+<span class="font-price-display text-price-display">â‚¦ 3,850</span>
 </div>
 <div class="flex justify-between items-center text-on-surface-variant text-label-lg">
 <span>Newer cars with extra legroom</span>
@@ -140,7 +140,7 @@ const stitchHtml = `<!-- Top Navigation Bar (Shared Component) -->
 <div class="flex-grow">
 <div class="flex justify-between items-center">
 <span class="font-bold text-body-lg">JAHRAH XL</span>
-<span class="font-price-display text-price-display">₦ 5,200</span>
+<span class="font-price-display text-price-display">â‚¦ 5,200</span>
 </div>
 <div class="flex justify-between items-center text-on-surface-variant text-label-lg">
 <span>6 seats, ideal for groups/bags</span>
@@ -157,7 +157,7 @@ const stitchHtml = `<!-- Top Navigation Bar (Shared Component) -->
 <span class="material-symbols-outlined text-royal-indigo">credit_card</span>
 </div>
 <div>
-<p class="font-bold text-label-lg">Personal • •••• 4242</p>
+<p class="font-bold text-label-lg">Personal â€¢ â€¢â€¢â€¢â€¢ 4242</p>
 <p class="text-[12px] text-on-surface-variant">Switch payment method</p>
 </div>
 </div>
@@ -194,7 +194,7 @@ const stitchHtml = `<!-- Top Navigation Bar (Shared Component) -->
 </div>
 <div class="flex-grow">
 <p class="font-bold text-body-lg">Samuel O.</p>
-<p class="text-on-surface-variant text-label-lg">Toyota Camry • Silver</p>
+<p class="text-on-surface-variant text-label-lg">Toyota Camry â€¢ Silver</p>
 </div>
 <div class="flex gap-2">
 <button class="bg-surface w-10 h-10 rounded-full flex items-center justify-center shadow-sm text-primary">
@@ -257,3 +257,4 @@ const stitchHtml = `<!-- Top Navigation Bar (Shared Component) -->
 export default function RideBookATripPage() {
   return <div dangerouslySetInnerHTML={{ __html: stitchHtml }} />
 }
+

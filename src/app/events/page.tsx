@@ -1,24 +1,24 @@
-export const metadata = { title: "JAHRAH | Events — Plan Your Event" }
+﻿export const metadata = { title: "JAHRAH | Events â€” Plan Your Event" }
 
 const stitchHtml = `<!-- TopNavBar -->
 <nav class="bg-surface dark:bg-surface-dim shadow-sm docked full-width top-0 sticky z-50">
 <div class="flex justify-between items-center px-margin-desktop py-4 w-full max-w-container-max mx-auto">
 <div class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed">JAHRAH</div>
 <div class="hidden md:flex items-center gap-8">
-<a class="text-on-surface-variant hover:text-primary transition-colors font-label-lg text-label-lg" href="#">Stays</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors font-label-lg text-label-lg" href="#">Ride</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors font-label-lg text-label-lg" href="#">Eats</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors font-label-lg text-label-lg" href="#">Fix</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors font-label-lg text-label-lg" href="#">Glow</a>
-<a class="text-primary font-bold border-b-2 border-primary pb-1 font-label-lg text-label-lg" href="#">Events</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors font-label-lg text-label-lg" href="#">Market</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-lg text-label-lg" href="/stays">Stays</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-lg text-label-lg" href="/ride">Ride</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-lg text-label-lg" href="/eats">Eats</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-lg text-label-lg" href="/fix">Fix</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-lg text-label-lg" href="/glow">Glow</a>
+<a class="text-primary font-bold border-b-2 border-primary pb-1 font-label-lg text-label-lg" href="/events">Events</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-lg text-label-lg" href="/market">Market</a>
 </div>
 <div class="flex items-center gap-6">
 <div class="flex gap-4">
 <span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary">location_on</span>
 <span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary">notifications</span>
 </div>
-<button class="bg-primary text-on-primary px-6 py-2 rounded-full font-label-lg text-label-lg transition-transform active:scale-95">Sign in / Register</button>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-full font-label-lg text-label-lg transition-transform active:scale-95"onclick="window.location.href='/dashboard'">Sign in / Register</button>
 </div>
 </div>
 </nav>
@@ -135,9 +135,9 @@ const stitchHtml = `<!-- TopNavBar -->
 <input class="w-full border-b-2 border-outline-variant focus:border-terracotta-clay focus:ring-0 py-3 bg-transparent text-on-surface font-body-md transition-colors" placeholder="Lagos, Abuja, Accra..." type="text"/>
 </div>
 <div class="md:col-span-2 space-y-2">
-<label class="font-label-lg text-label-lg text-on-surface-variant uppercase tracking-tighter">Estimated Budget (₦)</label>
+<label class="font-label-lg text-label-lg text-on-surface-variant uppercase tracking-tighter">Estimated Budget (â‚¦)</label>
 <div class="relative">
-<span class="absolute left-0 top-3 font-bold">₦</span>
+<span class="absolute left-0 top-3 font-bold">â‚¦</span>
 <input class="w-full border-b-2 border-outline-variant focus:border-terracotta-clay focus:ring-0 py-3 pl-6 bg-transparent text-on-surface font-body-md transition-colors" placeholder="1,500,000" type="text"/>
 </div>
 </div>
@@ -235,7 +235,7 @@ const stitchHtml = `<!-- TopNavBar -->
 <p class="text-on-surface-variant mb-6">"Everything from the catering to the DJ was sourced on JAHRAH. The process was seamless and the results were stunning."</p>
 <div class="flex justify-between items-center border-t border-outline-variant pt-6">
 <span class="font-label-lg text-label-lg text-on-surface-variant uppercase">350 Guests</span>
-<span class="text-primary font-bold font-price-display text-price-display">₦ 8.5M+</span>
+<span class="text-primary font-bold font-price-display text-price-display">â‚¦ 8.5M+</span>
 </div>
 </div>
 </div>
@@ -258,7 +258,7 @@ const stitchHtml = `<!-- TopNavBar -->
 <p class="text-on-surface-variant mb-6">"We needed high-end audio-visual equipment and professional ushers on short notice. JAHRAH delivered within 24 hours."</p>
 <div class="flex justify-between items-center border-t border-outline-variant pt-6">
 <span class="font-label-lg text-label-lg text-on-surface-variant uppercase">500 Attendees</span>
-<span class="text-primary font-bold font-price-display text-price-display">₦ 12M+</span>
+<span class="text-primary font-bold font-price-display text-price-display">â‚¦ 12M+</span>
 </div>
 </div>
 </div>
@@ -281,7 +281,7 @@ const stitchHtml = `<!-- TopNavBar -->
 <p class="text-on-surface-variant mb-6">"Found a hidden gem venue and a private chef who created a custom menu that my friends are still talking about weeks later."</p>
 <div class="flex justify-between items-center border-t border-outline-variant pt-6">
 <span class="font-label-lg text-label-lg text-on-surface-variant uppercase">50 Guests</span>
-<span class="text-primary font-bold font-price-display text-price-display">₦ 3.2M+</span>
+<span class="text-primary font-bold font-price-display text-price-display">â‚¦ 3.2M+</span>
 </div>
 </div>
 </div>
@@ -304,34 +304,34 @@ const stitchHtml = `<!-- TopNavBar -->
 <div>
 <h4 class="font-label-lg text-label-lg uppercase mb-6 text-on-surface">Company</h4>
 <ul class="space-y-4">
-<li><a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="#">About</a></li>
-<li><a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="#">Story</a></li>
-<li><a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="#">Careers</a></li>
-<li><a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="#">Press</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="/about">About</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="/story">Story</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="/careers">Careers</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="/press">Press</a></li>
 </ul>
 </div>
 <div>
 <h4 class="font-label-lg text-label-lg uppercase mb-6 text-on-surface">Pro Services</h4>
 <ul class="space-y-4">
-<li><a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="#">Become a Pro</a></li>
-<li><a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="#">Pro Dashboard</a></li>
-<li><a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="#">Partner</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="/pro-onboarding">Become a Pro</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="/pro-dashboard">Pro Dashboard</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="/partner">Partner</a></li>
 <li><a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="#">Host Your Space</a></li>
 </ul>
 </div>
 <div>
 <h4 class="font-label-lg text-label-lg uppercase mb-6 text-on-surface">Support</h4>
 <ul class="space-y-4">
-<li><a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="#">Help Centre</a></li>
-<li><a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="#">Safety Centre</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="/help">Help Centre</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="/safety">Safety Centre</a></li>
 <li><a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="#">Trust &amp; Verification</a></li>
-<li><a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="#">Cancellation Policy</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="/cancellation">Cancellation Policy</a></li>
 </ul>
 </div>
 <div>
 <h4 class="font-label-lg text-label-lg uppercase mb-6 text-on-surface">Legal</h4>
 <ul class="space-y-4">
-<li><a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="#">Privacy</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="/privacy">Privacy</a></li>
 <li><a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="#">Terms</a></li>
 <li><a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="#">Cookie Policy</a></li>
 <li><a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-body-md" href="#">Sitemap</a></li>
@@ -339,7 +339,7 @@ const stitchHtml = `<!-- TopNavBar -->
 </div>
 </div>
 <div class="px-margin-desktop max-w-container-max mx-auto pt-12 border-t border-outline-variant/30 text-center md:text-left">
-<p class="font-body-md text-body-md text-on-surface-variant">© 2024 JAHRAH. All rights reserved. Nigeria | Ghana | Kenya | South Africa | ₦ NGN</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Â© 2024 JAHRAH. All rights reserved. Nigeria | Ghana | Kenya | South Africa | â‚¦ NGN</p>
 </div>
 </footer>
 <script>
@@ -368,3 +368,4 @@ const stitchHtml = `<!-- TopNavBar -->
 export default function EventsPlanYourEventPage() {
   return <div dangerouslySetInnerHTML={{ __html: stitchHtml }} />
 }
+

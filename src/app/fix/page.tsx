@@ -1,4 +1,4 @@
-export const metadata = { title: "JAHRAH FIX — Professional Home Services" }
+﻿export const metadata = { title: "JAHRAH FIX â€” Professional Home Services" }
 
 const stitchHtml = `<!-- Top Navigation Bar -->
 <header class="docked full-width top-0 sticky z-50 bg-surface dark:bg-surface-dim shadow-sm">
@@ -6,20 +6,20 @@ const stitchHtml = `<!-- Top Navigation Bar -->
 <div class="flex items-center gap-8">
 <a class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed tracking-tight" href="#">JAHRAH</a>
 <div class="hidden md:flex gap-6 items-center">
-<a class="text-on-surface-variant hover:text-primary transition-colors font-label-lg text-label-lg" href="#">Stays</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors font-label-lg text-label-lg" href="#">Ride</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors font-label-lg text-label-lg" href="#">Eats</a>
-<a class="text-primary font-bold border-b-2 border-primary pb-1 font-label-lg text-label-lg" href="#">Fix</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors font-label-lg text-label-lg" href="#">Glow</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors font-label-lg text-label-lg" href="#">Events</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors font-label-lg text-label-lg" href="#">Market</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-lg text-label-lg" href="/stays">Stays</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-lg text-label-lg" href="/ride">Ride</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-lg text-label-lg" href="/eats">Eats</a>
+<a class="text-primary font-bold border-b-2 border-primary pb-1 font-label-lg text-label-lg" href="/fix">Fix</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-lg text-label-lg" href="/glow">Glow</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-lg text-label-lg" href="/events">Events</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-lg text-label-lg" href="/market">Market</a>
 </div>
 </div>
 <div class="flex items-center gap-4">
 <span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary transition-all">location_on</span>
 <span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary transition-all">notifications</span>
-<button class="hidden lg:block font-label-lg text-label-lg text-primary hover:underline">List your space</button>
-<button class="bg-primary text-on-primary px-6 py-2 rounded-full font-label-lg text-label-lg transition-transform active:scale-95">Sign in / Register</button>
+<button class="hidden lg:block font-label-lg text-label-lg text-primary hover:underline"onclick="window.location.href='/pro-onboarding'">List your space</button>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-full font-label-lg text-label-lg transition-transform active:scale-95"onclick="window.location.href='/dashboard'">Sign in / Register</button>
 </div>
 </nav>
 </header>
@@ -64,7 +64,7 @@ const stitchHtml = `<!-- Top Navigation Bar -->
 <span class="material-symbols-outlined text-3xl">plumbing</span>
 </div>
 <h3 class="font-headline-md text-[20px] mb-2 text-on-surface">Plumber</h3>
-<p class="text-on-surface-variant font-label-lg mb-4">From ₦ 8,000</p>
+<p class="text-on-surface-variant font-label-lg mb-4">From â‚¦ 8,000</p>
 <span class="material-symbols-outlined text-primary opacity-0 group-hover:opacity-100 transition-opacity">add_circle</span>
 </div>
 <!-- Electrician -->
@@ -73,7 +73,7 @@ const stitchHtml = `<!-- Top Navigation Bar -->
 <span class="material-symbols-outlined text-3xl">electrical_services</span>
 </div>
 <h3 class="font-headline-md text-[20px] mb-2 text-on-surface">Electrician</h3>
-<p class="text-on-surface-variant font-label-lg mb-4">From ₦ 10,000</p>
+<p class="text-on-surface-variant font-label-lg mb-4">From â‚¦ 10,000</p>
 <span class="material-symbols-outlined text-primary opacity-0 group-hover:opacity-100 transition-opacity">add_circle</span>
 </div>
 <!-- Painter -->
@@ -82,7 +82,7 @@ const stitchHtml = `<!-- Top Navigation Bar -->
 <span class="material-symbols-outlined text-3xl">format_paint</span>
 </div>
 <h3 class="font-headline-md text-[20px] mb-2 text-on-surface">Painter</h3>
-<p class="text-on-surface-variant font-label-lg mb-4">From ₦ 15,000</p>
+<p class="text-on-surface-variant font-label-lg mb-4">From â‚¦ 15,000</p>
 <span class="material-symbols-outlined text-primary opacity-0 group-hover:opacity-100 transition-opacity">add_circle</span>
 </div>
 <!-- AC Technician -->
@@ -91,7 +91,7 @@ const stitchHtml = `<!-- Top Navigation Bar -->
 <span class="material-symbols-outlined text-3xl">ac_unit</span>
 </div>
 <h3 class="font-headline-md text-[20px] mb-2 text-on-surface">AC Technician</h3>
-<p class="text-on-surface-variant font-label-lg mb-4">From ₦ 12,000</p>
+<p class="text-on-surface-variant font-label-lg mb-4">From â‚¦ 12,000</p>
 <span class="material-symbols-outlined text-primary opacity-0 group-hover:opacity-100 transition-opacity">add_circle</span>
 </div>
 <!-- Carpenter -->
@@ -100,7 +100,7 @@ const stitchHtml = `<!-- Top Navigation Bar -->
 <span class="material-symbols-outlined text-3xl">carpenter</span>
 </div>
 <h3 class="font-headline-md text-[20px] mb-2 text-on-surface">Carpenter</h3>
-<p class="text-on-surface-variant font-label-lg mb-4">From ₦ 9,000</p>
+<p class="text-on-surface-variant font-label-lg mb-4">From â‚¦ 9,000</p>
 <span class="material-symbols-outlined text-primary opacity-0 group-hover:opacity-100 transition-opacity">add_circle</span>
 </div>
 <!-- Tiler -->
@@ -109,7 +109,7 @@ const stitchHtml = `<!-- Top Navigation Bar -->
 <span class="material-symbols-outlined text-3xl">grid_view</span>
 </div>
 <h3 class="font-headline-md text-[20px] mb-2 text-on-surface">Tiler</h3>
-<p class="text-on-surface-variant font-label-lg mb-4">From ₦ 15,000</p>
+<p class="text-on-surface-variant font-label-lg mb-4">From â‚¦ 15,000</p>
 <span class="material-symbols-outlined text-primary opacity-0 group-hover:opacity-100 transition-opacity">add_circle</span>
 </div>
 <!-- House Cleaner -->
@@ -118,7 +118,7 @@ const stitchHtml = `<!-- Top Navigation Bar -->
 <span class="material-symbols-outlined text-3xl">cleaning_services</span>
 </div>
 <h3 class="font-headline-md text-[20px] mb-2 text-on-surface">House Cleaner</h3>
-<p class="text-on-surface-variant font-label-lg mb-4">From ₦ 8,000</p>
+<p class="text-on-surface-variant font-label-lg mb-4">From â‚¦ 8,000</p>
 <span class="material-symbols-outlined text-primary opacity-0 group-hover:opacity-100 transition-opacity">add_circle</span>
 </div>
 <!-- Deep Cleaning -->
@@ -127,7 +127,7 @@ const stitchHtml = `<!-- Top Navigation Bar -->
 <span class="material-symbols-outlined text-3xl">sanitizer</span>
 </div>
 <h3 class="font-headline-md text-[20px] mb-2 text-on-surface">Deep Cleaning</h3>
-<p class="text-on-surface-variant font-label-lg mb-4">From ₦ 25,000</p>
+<p class="text-on-surface-variant font-label-lg mb-4">From â‚¦ 25,000</p>
 <span class="material-symbols-outlined text-primary opacity-0 group-hover:opacity-100 transition-opacity">add_circle</span>
 </div>
 <!-- Appliance Repair -->
@@ -136,7 +136,7 @@ const stitchHtml = `<!-- Top Navigation Bar -->
 <span class="material-symbols-outlined text-3xl">home_repair_service</span>
 </div>
 <h3 class="font-headline-md text-[20px] mb-2 text-on-surface">Appliance Repair</h3>
-<p class="text-on-surface-variant font-label-lg mb-4">From ₦ 10,000</p>
+<p class="text-on-surface-variant font-label-lg mb-4">From â‚¦ 10,000</p>
 <span class="material-symbols-outlined text-primary opacity-0 group-hover:opacity-100 transition-opacity">add_circle</span>
 </div>
 <!-- Generator Technician -->
@@ -145,7 +145,7 @@ const stitchHtml = `<!-- Top Navigation Bar -->
 <span class="material-symbols-outlined text-3xl">settings_input_component</span>
 </div>
 <h3 class="font-headline-md text-[20px] mb-2 text-on-surface">Generator Tech</h3>
-<p class="text-on-surface-variant font-label-lg mb-4">From ₦ 12,000</p>
+<p class="text-on-surface-variant font-label-lg mb-4">From â‚¦ 12,000</p>
 <span class="material-symbols-outlined text-primary opacity-0 group-hover:opacity-100 transition-opacity">add_circle</span>
 </div>
 <!-- CCTV -->
@@ -154,7 +154,7 @@ const stitchHtml = `<!-- Top Navigation Bar -->
 <span class="material-symbols-outlined text-3xl">videocam</span>
 </div>
 <h3 class="font-headline-md text-[20px] mb-2 text-on-surface">CCTV</h3>
-<p class="text-on-surface-variant font-label-lg mb-4">From ₦ 20,000</p>
+<p class="text-on-surface-variant font-label-lg mb-4">From â‚¦ 20,000</p>
 <span class="material-symbols-outlined text-primary opacity-0 group-hover:opacity-100 transition-opacity">add_circle</span>
 </div>
 <!-- Fumigation -->
@@ -163,7 +163,7 @@ const stitchHtml = `<!-- Top Navigation Bar -->
 <span class="material-symbols-outlined text-3xl">pest_control</span>
 </div>
 <h3 class="font-headline-md text-[20px] mb-2 text-on-surface">Fumigation</h3>
-<p class="text-on-surface-variant font-label-lg mb-4">From ₦ 30,000</p>
+<p class="text-on-surface-variant font-label-lg mb-4">From â‚¦ 30,000</p>
 <span class="material-symbols-outlined text-primary opacity-0 group-hover:opacity-100 transition-opacity">add_circle</span>
 </div>
 </div>
@@ -187,7 +187,7 @@ const stitchHtml = `<!-- Top Navigation Bar -->
 <span class="font-bold ml-1 text-on-surface">4.9</span>
 </div>
 </div>
-<p class="text-on-surface-variant font-label-lg mb-4">Master Electrician • 150+ jobs</p>
+<p class="text-on-surface-variant font-label-lg mb-4">Master Electrician â€¢ 150+ jobs</p>
 <div class="flex flex-wrap gap-2 mb-6">
 <span class="bg-surface-container px-3 py-1 rounded-full text-[12px] font-semibold text-secondary">VERIFIED</span>
 <span class="bg-surface-container px-3 py-1 rounded-full text-[12px] font-semibold text-royal-indigo">TOP PRO</span>
@@ -206,7 +206,7 @@ const stitchHtml = `<!-- Top Navigation Bar -->
 <span class="font-bold ml-1 text-on-surface">5.0</span>
 </div>
 </div>
-<p class="text-on-surface-variant font-label-lg mb-4">Licensed Plumber • 80+ jobs</p>
+<p class="text-on-surface-variant font-label-lg mb-4">Licensed Plumber â€¢ 80+ jobs</p>
 <div class="flex flex-wrap gap-2 mb-6">
 <span class="bg-surface-container px-3 py-1 rounded-full text-[12px] font-semibold text-secondary">VERIFIED</span>
 <span class="bg-surface-container px-3 py-1 rounded-full text-[12px] font-semibold text-royal-indigo">QUICK RESPONDER</span>
@@ -225,7 +225,7 @@ const stitchHtml = `<!-- Top Navigation Bar -->
 <span class="font-bold ml-1 text-on-surface">4.8</span>
 </div>
 </div>
-<p class="text-on-surface-variant font-label-lg mb-4">Agency Cleaning • 300+ jobs</p>
+<p class="text-on-surface-variant font-label-lg mb-4">Agency Cleaning â€¢ 300+ jobs</p>
 <div class="flex flex-wrap gap-2 mb-6">
 <span class="bg-surface-container px-3 py-1 rounded-full text-[12px] font-semibold text-secondary">VERIFIED</span>
 <span class="bg-surface-container px-3 py-1 rounded-full text-[12px] font-semibold text-royal-indigo">EQUIPMENT INCLUDED</span>
@@ -244,7 +244,7 @@ const stitchHtml = `<!-- Top Navigation Bar -->
 <span class="font-bold ml-1 text-on-surface">4.9</span>
 </div>
 </div>
-<p class="text-on-surface-variant font-label-lg mb-4">Gen Specialist • 45+ jobs</p>
+<p class="text-on-surface-variant font-label-lg mb-4">Gen Specialist â€¢ 45+ jobs</p>
 <div class="flex flex-wrap gap-2 mb-6">
 <span class="bg-surface-container px-3 py-1 rounded-full text-[12px] font-semibold text-secondary">VERIFIED</span>
 </div>
@@ -326,41 +326,41 @@ const stitchHtml = `<!-- Top Navigation Bar -->
 <div>
 <h5 class="font-bold text-on-surface mb-6 uppercase text-sm tracking-wider">Services</h5>
 <ul class="space-y-4">
-<li><a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="#">Stays</a></li>
-<li><a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="#">Ride</a></li>
-<li><a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-primary font-semibold" href="#">Fix</a></li>
-<li><a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="#">Eats</a></li>
-<li><a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="#">Glow</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="/stays">Stays</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="/ride">Ride</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors font-body-md text-primary font-semibold" href="/fix">Fix</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="/eats">Eats</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="/glow">Glow</a></li>
 </ul>
 </div>
 <div>
 <h5 class="font-bold text-on-surface mb-6 uppercase text-sm tracking-wider">Company</h5>
 <ul class="space-y-4">
-<li><a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="#">About</a></li>
-<li><a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="#">Careers</a></li>
-<li><a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="#">Press</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="/about">About</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="/careers">Careers</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="/press">Press</a></li>
 <li><a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="#">Investor Relations</a></li>
 </ul>
 </div>
 <div>
 <h5 class="font-bold text-on-surface mb-6 uppercase text-sm tracking-wider">Support</h5>
 <ul class="space-y-4">
-<li><a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="#">Help Centre</a></li>
-<li><a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="#">Safety Centre</a></li>
-<li><a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="#">Cancellation Policy</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="/help">Help Centre</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="/safety">Safety Centre</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="/cancellation">Cancellation Policy</a></li>
 </ul>
 </div>
 <div>
 <h5 class="font-bold text-on-surface mb-6 uppercase text-sm tracking-wider">Legal</h5>
 <ul class="space-y-4">
-<li><a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="#">Privacy</a></li>
+<li><a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="/privacy">Privacy</a></li>
 <li><a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="#">Terms</a></li>
 <li><a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="#">Cookie Policy</a></li>
 </ul>
 </div>
 </div>
 <div class="max-w-container-max mx-auto px-margin-desktop pt-10 border-t border-outline-variant">
-<p class="text-on-surface-variant font-body-md text-center opacity-80">© 2024 JAHRAH. All rights reserved. Nigeria | Ghana | Kenya | South Africa | ₦ NGN</p>
+<p class="text-on-surface-variant font-body-md text-center opacity-80">Â© 2024 JAHRAH. All rights reserved. Nigeria | Ghana | Kenya | South Africa | â‚¦ NGN</p>
 </div>
 </footer>
 <!-- FAB (Only on Home/Dashboard screens) -->
@@ -371,3 +371,4 @@ const stitchHtml = `<!-- Top Navigation Bar -->
 export default function FixHomeServicesPage() {
   return <div dangerouslySetInnerHTML={{ __html: stitchHtml }} />
 }
+

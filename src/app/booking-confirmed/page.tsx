@@ -1,4 +1,4 @@
-export const metadata = { title: "Booking Confirmed | JAHRAH" }
+﻿export const metadata = { title: "Booking Confirmed | JAHRAH" }
 
 const stitchHtml = `<!-- NAVIGATION SHELL SUPPRESSED FOR TRANSACTIONAL SUCCESS PAGE -->
 <main class="min-h-screen flex flex-col items-center justify-center py-12 px-margin-mobile md:px-margin-desktop">
@@ -20,7 +20,7 @@ const stitchHtml = `<!-- NAVIGATION SHELL SUPPRESSED FOR TRANSACTIONAL SUCCESS P
 <!-- Confirmed Header -->
 <div class="fade-in-up delay-1">
 <h1 class="font-headline-lg text-headline-lg text-primary mb-2">You're booked, Chidi!</h1>
-<p class="font-body-lg text-body-lg text-on-surface-variant max-w-md mx-auto">Your lifestyle experience is confirmed and we’ve notified your professional.</p>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-md mx-auto">Your lifestyle experience is confirmed and weâ€™ve notified your professional.</p>
 </div>
 <!-- Summary Card -->
 <div class="w-full mt-12 bg-surface-container rounded-xl p-8 md:p-10 shadow-sm text-left fade-in-up delay-2 border border-outline-variant/30">
@@ -41,7 +41,7 @@ const stitchHtml = `<!-- NAVIGATION SHELL SUPPRESSED FOR TRANSACTIONAL SUCCESS P
 <div>
 <p class="font-label-lg text-label-lg text-on-surface-variant">Date &amp; Time</p>
 <p class="font-body-md font-bold mt-1">Saturday, April 12, 2025</p>
-<p class="font-body-md text-on-surface-variant">10:00 AM — 1:00 PM</p>
+<p class="font-body-md text-on-surface-variant">10:00 AM â€” 1:00 PM</p>
 </div>
 </div>
 <div class="flex items-start gap-4">
@@ -71,7 +71,7 @@ const stitchHtml = `<!-- NAVIGATION SHELL SUPPRESSED FOR TRANSACTIONAL SUCCESS P
 </div>
 <div class="w-full md:w-auto text-right md:text-right border-t md:border-t-0 md:border-l border-outline-variant pt-4 md:pt-0 md:pl-8">
 <p class="font-label-lg text-label-lg text-on-surface-variant">Total Paid</p>
-<p class="font-price-display text-price-display text-primary mt-1">₦ 135,000</p>
+<p class="font-price-display text-price-display text-primary mt-1">â‚¦ 135,000</p>
 </div>
 </div>
 </div>
@@ -134,37 +134,37 @@ const stitchHtml = `<!-- NAVIGATION SHELL SUPPRESSED FOR TRANSACTIONAL SUCCESS P
 </div>
 <div class="flex flex-col gap-4">
 <p class="font-label-lg text-on-surface font-bold uppercase tracking-wider mb-2">Company</p>
-<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="#">About</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="#">Story</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="#">Careers</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="/about">About</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="/story">Story</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="/careers">Careers</a>
 <a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="#">Blog</a>
 </div>
 <div class="flex flex-col gap-4">
 <p class="font-label-lg text-on-surface font-bold uppercase tracking-wider mb-2">Services</p>
-<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="#">Stays</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="#">Glow</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="#">Eats</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="#">Market</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="/stays">Stays</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="/glow">Glow</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="/eats">Eats</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="/market">Market</a>
 </div>
 <div class="flex flex-col gap-4">
 <p class="font-label-lg text-on-surface font-bold uppercase tracking-wider mb-2">For Pros</p>
-<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="#">Become a Pro</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="#">Pro Dashboard</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="/pro-onboarding">Become a Pro</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="/pro-dashboard">Pro Dashboard</a>
 <a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="#">Host Your Space</a>
 <a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="#">Success Stories</a>
 </div>
 <div class="flex flex-col gap-4">
 <p class="font-label-lg text-on-surface font-bold uppercase tracking-wider mb-2">Support</p>
-<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="#">Help Centre</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="#">Safety Centre</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="/help">Help Centre</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="/safety">Safety Centre</a>
 <a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="#">Trust &amp; Verification</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="#">Cancellation Policy</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="/cancellation">Cancellation Policy</a>
 </div>
 </div>
 <div class="px-margin-desktop py-8 border-t border-outline-variant/30 max-w-container-max mx-auto text-center md:text-left">
-<p class="font-body-md text-on-surface-variant opacity-80">© 2024 JAHRAH. All rights reserved. Nigeria | Ghana | Kenya | South Africa | ₦ NGN</p>
+<p class="font-body-md text-on-surface-variant opacity-80">Â© 2024 JAHRAH. All rights reserved. Nigeria | Ghana | Kenya | South Africa | â‚¦ NGN</p>
 <div class="flex flex-wrap gap-4 mt-4 md:mt-2 justify-center md:justify-start">
-<a class="text-on-surface-variant hover:text-primary transition-colors text-sm" href="#">Privacy</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors text-sm" href="/privacy">Privacy</a>
 <a class="text-on-surface-variant hover:text-primary transition-colors text-sm" href="#">Terms</a>
 <a class="text-on-surface-variant hover:text-primary transition-colors text-sm" href="#">Cookie Policy</a>
 <a class="text-on-surface-variant hover:text-primary transition-colors text-sm" href="#">Sitemap</a>
@@ -197,3 +197,4 @@ const stitchHtml = `<!-- NAVIGATION SHELL SUPPRESSED FOR TRANSACTIONAL SUCCESS P
 export default function BookingConfirmedPage() {
   return <div dangerouslySetInnerHTML={{ __html: stitchHtml }} />
 }
+

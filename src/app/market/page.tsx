@@ -1,4 +1,4 @@
-export const metadata = { title: "JAHRAH Market | Premium Pan-African Marketplace" }
+﻿export const metadata = { title: "JAHRAH Market | Premium Pan-African Marketplace" }
 
 const stitchHtml = `<!-- TopNavBar -->
 <header class="bg-surface dark:bg-surface-dim shadow-sm docked full-width top-0 sticky z-50">
@@ -6,13 +6,13 @@ const stitchHtml = `<!-- TopNavBar -->
 <div class="flex items-center gap-8">
 <a class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed" href="#">JAHRAH</a>
 <nav class="hidden md:flex items-center gap-6">
-<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" href="#">Stays</a>
-<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" href="#">Ride</a>
-<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" href="#">Eats</a>
-<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" href="#">Fix</a>
-<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" href="#">Glow</a>
-<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" href="#">Events</a>
-<a class="text-primary font-bold border-b-2 border-primary pb-1 font-label-lg text-label-lg" href="#">Market</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" href="/stays">Stays</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" href="/ride">Ride</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" href="/eats">Eats</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" href="/fix">Fix</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" href="/glow">Glow</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" href="/events">Events</a>
+<a class="text-primary font-bold border-b-2 border-primary pb-1 font-label-lg text-label-lg" href="/market">Market</a>
 </nav>
 </div>
 <div class="flex items-center gap-6">
@@ -27,14 +27,14 @@ const stitchHtml = `<!-- TopNavBar -->
 <img class="w-full h-full object-cover" data-alt="A clean, professional headshot of a stylish West African man in a minimalist office setting with soft natural lighting, reflecting a premium lifestyle aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCELg-v-1LC6Sh8_Lzm9Ht7DWygj2K1a9ZgdKOpsbJ-4g4bRp_wfIW2O1R7qdDYpVBoQ-LWrgYWacEpGCmbck7Tnv9rXGbbDXFKYiYljsAwTAefeFIhaJ-7D2X9PSjaQ0VH7Y4tvztZsFb07GxCu_dTYwEpc3UcgYuKNG617a2e-Cmf68jCqgTyq6nG9WJ7U7PiOGANCJdZKl36cwAetOiE-Jq22eyVgUVMe3E_iXCFfF_rPk9ubdeXpTiBTL68YQQ-z6SCQC63978"/>
 </div>
 </div>
-<button class="hidden md:block bg-primary text-on-primary px-6 py-2 rounded-full font-label-lg hover:scale-95 transition-transform">Sign in / Register</button>
+<button class="hidden md:block bg-primary text-on-primary px-6 py-2 rounded-full font-label-lg hover:scale-95 transition-transform"onclick="window.location.href='/dashboard'">Sign in / Register</button>
 </div>
 </div>
 </header>
 <main class="max-w-container-max mx-auto px-margin-desktop py-8">
 <!-- Marketplace Header & Search -->
 <div class="mb-section-gap">
-<h1 class="font-display-lg text-display-lg text-on-surface mb-6">Market — Shop JAHRAH</h1>
+<h1 class="font-display-lg text-display-lg text-on-surface mb-6">Market â€” Shop JAHRAH</h1>
 <div class="relative max-w-2xl">
 <span class="material-symbols-outlined absolute left-4 top-1/2 -translate-y-1/2 text-on-surface-variant text-2xl">search</span>
 <input class="w-full pl-14 pr-6 py-5 rounded-xl border-outline-variant focus:border-terracotta-clay focus:ring-1 focus:ring-terracotta-clay bg-surface-container-lowest font-body-lg shadow-sm transition-all" placeholder="Search for products, brands, sellers..." type="text"/>
@@ -58,7 +58,7 @@ const stitchHtml = `<!-- TopNavBar -->
 <div class="relative z-20 h-full flex flex-col justify-center px-12 max-w-xl text-white">
 <span class="font-label-lg text-sunset-orange bg-white/10 backdrop-blur-md px-4 py-1 rounded-full w-fit mb-4">Featured Seller: OMO LABS</span>
 <h2 class="font-headline-lg text-headline-lg mb-4">Handcrafted Excellence from Lagos</h2>
-<p class="font-body-lg text-body-lg mb-8 opacity-90">Discover the exclusive 'Heritage Collection'—where traditional weaving meets contemporary industrial design.</p>
+<p class="font-body-lg text-body-lg mb-8 opacity-90">Discover the exclusive 'Heritage Collection'â€”where traditional weaving meets contemporary industrial design.</p>
 <button class="bg-sunset-orange hover:bg-primary text-white font-label-lg px-8 py-4 rounded-lg w-fit transition-all flex items-center gap-2">
                     Shop Collection
                     <span class="material-symbols-outlined">arrow_forward</span>
@@ -87,8 +87,8 @@ const stitchHtml = `<!-- TopNavBar -->
 <div class="p-4">
 <h4 class="font-label-lg text-on-surface truncate">Artisan Leather Weekend Bag</h4>
 <div class="mt-2">
-<span class="font-price-display text-primary">₦ 85,000</span>
-<span class="text-xs line-through text-on-surface-variant ml-2">₦ 142,000</span>
+<span class="font-price-display text-primary">â‚¦ 85,000</span>
+<span class="text-xs line-through text-on-surface-variant ml-2">â‚¦ 142,000</span>
 </div>
 </div>
 </div>
@@ -101,8 +101,8 @@ const stitchHtml = `<!-- TopNavBar -->
 <div class="p-4">
 <h4 class="font-label-lg text-on-surface truncate">Studio-Z Audio Hub</h4>
 <div class="mt-2">
-<span class="font-price-display text-primary">₦ 112,000</span>
-<span class="text-xs line-through text-on-surface-variant ml-2">₦ 149,000</span>
+<span class="font-price-display text-primary">â‚¦ 112,000</span>
+<span class="text-xs line-through text-on-surface-variant ml-2">â‚¦ 149,000</span>
 </div>
 </div>
 </div>
@@ -115,8 +115,8 @@ const stitchHtml = `<!-- TopNavBar -->
 <div class="p-4">
 <h4 class="font-label-lg text-on-surface truncate">Imperial Silk Scarf</h4>
 <div class="mt-2">
-<span class="font-price-display text-primary">₦ 24,500</span>
-<span class="text-xs line-through text-on-surface-variant ml-2">₦ 49,000</span>
+<span class="font-price-display text-primary">â‚¦ 24,500</span>
+<span class="text-xs line-through text-on-surface-variant ml-2">â‚¦ 49,000</span>
 </div>
 </div>
 </div>
@@ -129,8 +129,8 @@ const stitchHtml = `<!-- TopNavBar -->
 <div class="p-4">
 <h4 class="font-label-lg text-on-surface truncate">Monolith Candle Set</h4>
 <div class="mt-2">
-<span class="font-price-display text-primary">₦ 18,000</span>
-<span class="text-xs line-through text-on-surface-variant ml-2">₦ 21,200</span>
+<span class="font-price-display text-primary">â‚¦ 18,000</span>
+<span class="text-xs line-through text-on-surface-variant ml-2">â‚¦ 21,200</span>
 </div>
 </div>
 </div>
@@ -143,8 +143,8 @@ const stitchHtml = `<!-- TopNavBar -->
 <div class="p-4">
 <h4 class="font-label-lg text-on-surface truncate">Pulse X Run Sneakers</h4>
 <div class="mt-2">
-<span class="font-price-display text-primary">₦ 68,000</span>
-<span class="text-xs line-through text-on-surface-variant ml-2">₦ 97,000</span>
+<span class="font-price-display text-primary">â‚¦ 68,000</span>
+<span class="text-xs line-through text-on-surface-variant ml-2">â‚¦ 97,000</span>
 </div>
 </div>
 </div>
@@ -174,7 +174,7 @@ const stitchHtml = `<!-- TopNavBar -->
 <span class="text-xs text-on-surface-variant">(124 reviews)</span>
 </div>
 <div class="flex flex-col gap-1 mb-6">
-<span class="font-price-display text-primary">₦ 42,000</span>
+<span class="font-price-display text-primary">â‚¦ 42,000</span>
 <span class="text-xs text-secondary font-semibold">Delivery by Friday</span>
 </div>
 <button class="w-full bg-primary text-on-primary py-3 rounded-lg font-label-lg hover:bg-primary-container transition-colors">Add to Cart</button>
@@ -200,7 +200,7 @@ const stitchHtml = `<!-- TopNavBar -->
 <span class="text-xs text-on-surface-variant">(310 reviews)</span>
 </div>
 <div class="flex flex-col gap-1 mb-6">
-<span class="font-price-display text-primary">₦ 15,500</span>
+<span class="font-price-display text-primary">â‚¦ 15,500</span>
 <span class="text-xs text-secondary font-semibold">Instant Delivery</span>
 </div>
 <button class="w-full bg-primary text-on-primary py-3 rounded-lg font-label-lg hover:bg-primary-container transition-colors">Add to Cart</button>
@@ -226,7 +226,7 @@ const stitchHtml = `<!-- TopNavBar -->
 <span class="text-xs text-on-surface-variant">(56 reviews)</span>
 </div>
 <div class="flex flex-col gap-1 mb-6">
-<span class="font-price-display text-primary">₦ 285,000</span>
+<span class="font-price-display text-primary">â‚¦ 285,000</span>
 <span class="text-xs text-secondary font-semibold">Pre-order: Ships in 7 days</span>
 </div>
 <button class="w-full bg-primary text-on-primary py-3 rounded-lg font-label-lg hover:bg-primary-container transition-colors">Add to Cart</button>
@@ -252,7 +252,7 @@ const stitchHtml = `<!-- TopNavBar -->
 <span class="text-xs text-on-surface-variant">(890 reviews)</span>
 </div>
 <div class="flex flex-col gap-1 mb-6">
-<span class="font-price-display text-primary">₦ 12,000</span>
+<span class="font-price-display text-primary">â‚¦ 12,000</span>
 <span class="text-xs text-secondary font-semibold">Delivery tomorrow</span>
 </div>
 <button class="w-full bg-primary text-on-primary py-3 rounded-lg font-label-lg hover:bg-primary-container transition-colors">Add to Cart</button>
@@ -318,35 +318,35 @@ const stitchHtml = `<!-- TopNavBar -->
 </div>
 <div class="flex flex-col gap-4">
 <h5 class="font-label-lg text-on-surface uppercase tracking-widest">Company</h5>
-<a class="text-on-surface-variant hover:text-primary transition-colors text-body-md" href="#">About</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors text-body-md" href="#">Story</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors text-body-md" href="#">Careers</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors text-body-md" href="/about">About</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors text-body-md" href="/story">Story</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors text-body-md" href="/careers">Careers</a>
 <a class="text-on-surface-variant hover:text-primary transition-colors text-body-md" href="#">Blog</a>
 </div>
 <div class="flex flex-col gap-4">
 <h5 class="font-label-lg text-on-surface uppercase tracking-widest">Marketplace</h5>
-<a class="text-on-surface-variant hover:text-primary transition-colors text-body-md" href="#">Become a Pro</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors text-body-md" href="#">Pro Dashboard</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors text-body-md" href="#">Partner</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors text-body-md" href="/pro-onboarding">Become a Pro</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors text-body-md" href="/pro-dashboard">Pro Dashboard</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors text-body-md" href="/partner">Partner</a>
 <a class="text-on-surface-variant hover:text-primary transition-colors text-body-md" href="#">Host Your Space</a>
 </div>
 <div class="flex flex-col gap-4">
 <h5 class="font-label-lg text-on-surface uppercase tracking-widest">Support</h5>
-<a class="text-on-surface-variant hover:text-primary transition-colors text-body-md" href="#">Help Centre</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors text-body-md" href="#">Safety Centre</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors text-body-md" href="#">Cancellation Policy</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors text-body-md" href="/help">Help Centre</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors text-body-md" href="/safety">Safety Centre</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors text-body-md" href="/cancellation">Cancellation Policy</a>
 <a class="text-on-surface-variant hover:text-primary transition-colors text-body-md" href="#">Report an Issue</a>
 </div>
 <div class="flex flex-col gap-4">
 <h5 class="font-label-lg text-on-surface uppercase tracking-widest">Legal</h5>
-<a class="text-on-surface-variant hover:text-primary transition-colors text-body-md" href="#">Privacy</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors text-body-md" href="/privacy">Privacy</a>
 <a class="text-on-surface-variant hover:text-primary transition-colors text-body-md" href="#">Terms</a>
 <a class="text-on-surface-variant hover:text-primary transition-colors text-body-md" href="#">Cookie Policy</a>
 <a class="text-on-surface-variant hover:text-primary transition-colors text-body-md" href="#">Sitemap</a>
 </div>
 </div>
 <div class="mt-section-gap pt-8 border-t border-outline-variant/30 px-margin-desktop max-w-container-max mx-auto">
-<p class="text-on-surface-variant font-body-md opacity-60 text-center">© 2024 JAHRAH. All rights reserved. Nigeria | Ghana | Kenya | South Africa | ₦ NGN</p>
+<p class="text-on-surface-variant font-body-md opacity-60 text-center">Â© 2024 JAHRAH. All rights reserved. Nigeria | Ghana | Kenya | South Africa | â‚¦ NGN</p>
 </div>
 </footer>
 <!-- FAB (Suppressed on this task-focused marketplace screen per mandate) -->
@@ -384,3 +384,4 @@ const stitchHtml = `<!-- TopNavBar -->
 export default function MarketShopJahrahPage() {
   return <div dangerouslySetInnerHTML={{ __html: stitchHtml }} />
 }
+

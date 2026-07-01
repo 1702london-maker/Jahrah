@@ -1,4 +1,4 @@
-export const metadata = { title: "JAHRAH EATS — Food & Private Chefs" }
+﻿export const metadata = { title: "JAHRAH EATS â€” Food & Private Chefs" }
 
 const stitchHtml = `<!-- TopNavBar -->
 <header class="bg-surface dark:bg-surface-dim shadow-sm docked full-width top-0 sticky z-50">
@@ -6,13 +6,13 @@ const stitchHtml = `<!-- TopNavBar -->
 <div class="flex items-center gap-8">
 <h1 class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed">JAHRAH</h1>
 <nav class="hidden md:flex items-center gap-6">
-<a class="text-on-surface-variant hover:text-primary transition-colors font-label-lg text-label-lg" href="#">Stays</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors font-label-lg text-label-lg" href="#">Ride</a>
-<a class="text-primary font-bold border-b-2 border-primary pb-1 font-label-lg text-label-lg" href="#">Eats</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors font-label-lg text-label-lg" href="#">Fix</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors font-label-lg text-label-lg" href="#">Glow</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors font-label-lg text-label-lg" href="#">Events</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors font-label-lg text-label-lg" href="#">Market</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-lg text-label-lg" href="/stays">Stays</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-lg text-label-lg" href="/ride">Ride</a>
+<a class="text-primary font-bold border-b-2 border-primary pb-1 font-label-lg text-label-lg" href="/eats">Eats</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-lg text-label-lg" href="/fix">Fix</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-lg text-label-lg" href="/glow">Glow</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-lg text-label-lg" href="/events">Events</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-lg text-label-lg" href="/market">Market</a>
 </nav>
 </div>
 <div class="flex items-center gap-6">
@@ -20,8 +20,8 @@ const stitchHtml = `<!-- TopNavBar -->
 <span class="material-symbols-outlined cursor-pointer hover:text-primary transition-all">location_on</span>
 <span class="material-symbols-outlined cursor-pointer hover:text-primary transition-all">notifications</span>
 </div>
-<button class="hidden lg:block text-primary font-label-lg text-label-lg hover:underline transition-all">List your space</button>
-<button class="bg-primary text-on-primary px-6 py-2 rounded-full font-label-lg text-label-lg hover:scale-95 transition-transform duration-200">Sign in / Register</button>
+<button class="hidden lg:block text-primary font-label-lg text-label-lg hover:underline transition-all"onclick="window.location.href='/pro-onboarding'">List your space</button>
+<button class="bg-primary text-on-primary px-6 py-2 rounded-full font-label-lg text-label-lg hover:scale-95 transition-transform duration-200"onclick="window.location.href='/dashboard'">Sign in / Register</button>
 </div>
 </div>
 </header>
@@ -29,7 +29,7 @@ const stitchHtml = `<!-- TopNavBar -->
 <!-- Header & Toggle Section -->
 <div class="flex flex-col md:flex-row justify-between items-end mb-12 gap-8">
 <div class="space-y-4">
-<h2 class="font-headline-lg text-headline-lg text-on-background">Eats — Food & Private Chefs</h2>
+<h2 class="font-headline-lg text-headline-lg text-on-background">Eats â€” Food & Private Chefs</h2>
 <div class="flex items-center gap-2 text-on-surface-variant">
 <span class="material-symbols-outlined">location_on</span>
 <span class="font-label-lg text-label-lg">Delivering to: Victoria Island, Lagos</span>
@@ -77,11 +77,11 @@ const stitchHtml = `<!-- TopNavBar -->
 <span class="text-on-surface-variant text-sm">(500+)</span>
 </div>
 </div>
-<p class="text-on-surface-variant mb-4">Nigerian • Traditional • Grill</p>
+<p class="text-on-surface-variant mb-4">Nigerian â€¢ Traditional â€¢ Grill</p>
 <div class="grid grid-cols-2 gap-4 mb-6">
 <div class="flex items-center gap-2 text-on-surface-variant">
 <span class="material-symbols-outlined text-primary">schedule</span>
-<span class="text-sm">25–40 mins</span>
+<span class="text-sm">25â€“40 mins</span>
 </div>
 <div class="flex items-center gap-2 text-on-surface-variant">
 <span class="material-symbols-outlined text-primary">delivery_dining</span>
@@ -89,7 +89,7 @@ const stitchHtml = `<!-- TopNavBar -->
 </div>
 <div class="flex items-center gap-2 text-on-surface-variant">
 <span class="material-symbols-outlined text-primary">shopping_bag</span>
-<span class="text-sm">Min ₦ 3,500</span>
+<span class="text-sm">Min â‚¦ 3,500</span>
 </div>
 </div>
 </div>
@@ -111,19 +111,19 @@ const stitchHtml = `<!-- TopNavBar -->
 <span class="text-on-surface-variant text-sm">(320+)</span>
 </div>
 </div>
-<p class="text-on-surface-variant mb-4">Chinese • Asian Fusion • Dim Sum</p>
+<p class="text-on-surface-variant mb-4">Chinese â€¢ Asian Fusion â€¢ Dim Sum</p>
 <div class="grid grid-cols-2 gap-4 mb-6">
 <div class="flex items-center gap-2 text-on-surface-variant">
 <span class="material-symbols-outlined text-primary">schedule</span>
-<span class="text-sm">30–50 mins</span>
+<span class="text-sm">30â€“50 mins</span>
 </div>
 <div class="flex items-center gap-2 text-on-surface-variant">
 <span class="material-symbols-outlined text-primary">delivery_dining</span>
-<span class="text-sm">₦ 800 Fee</span>
+<span class="text-sm">â‚¦ 800 Fee</span>
 </div>
 <div class="flex items-center gap-2 text-on-surface-variant">
 <span class="material-symbols-outlined text-primary">shopping_bag</span>
-<span class="text-sm">Min ₦ 5,000</span>
+<span class="text-sm">Min â‚¦ 5,000</span>
 </div>
 </div>
 </div>
@@ -145,19 +145,19 @@ const stitchHtml = `<!-- TopNavBar -->
 <span class="text-on-surface-variant text-sm">(1.2k)</span>
 </div>
 </div>
-<p class="text-on-surface-variant mb-4">Fast Food • Gourmet Burgers • Wings</p>
+<p class="text-on-surface-variant mb-4">Fast Food â€¢ Gourmet Burgers â€¢ Wings</p>
 <div class="grid grid-cols-2 gap-4 mb-6">
 <div class="flex items-center gap-2 text-on-surface-variant">
 <span class="material-symbols-outlined text-primary">schedule</span>
-<span class="text-sm">20–35 mins</span>
+<span class="text-sm">20â€“35 mins</span>
 </div>
 <div class="flex items-center gap-2 text-on-surface-variant">
 <span class="material-symbols-outlined text-primary">delivery_dining</span>
-<span class="text-sm">₦ 500 Fee</span>
+<span class="text-sm">â‚¦ 500 Fee</span>
 </div>
 <div class="flex items-center gap-2 text-on-surface-variant">
 <span class="material-symbols-outlined text-primary">shopping_bag</span>
-<span class="text-sm">Min ₦ 3,500</span>
+<span class="text-sm">Min â‚¦ 3,500</span>
 </div>
 </div>
 </div>
@@ -180,11 +180,11 @@ const stitchHtml = `<!-- TopNavBar -->
 <span class="text-on-surface-variant text-sm">(850+)</span>
 </div>
 </div>
-<p class="text-on-surface-variant mb-4">Continental • Bistro • Coffee</p>
+<p class="text-on-surface-variant mb-4">Continental â€¢ Bistro â€¢ Coffee</p>
 <div class="grid grid-cols-2 gap-4 mb-6">
 <div class="flex items-center gap-2 text-on-surface-variant">
 <span class="material-symbols-outlined text-primary">schedule</span>
-<span class="text-sm">35–55 mins</span>
+<span class="text-sm">35â€“55 mins</span>
 </div>
 <div class="flex items-center gap-2 text-on-surface-variant">
 <span class="material-symbols-outlined text-primary">delivery_dining</span>
@@ -192,7 +192,7 @@ const stitchHtml = `<!-- TopNavBar -->
 </div>
 <div class="flex items-center gap-2 text-on-surface-variant">
 <span class="material-symbols-outlined text-primary">shopping_bag</span>
-<span class="text-sm">Min ₦ 4,000</span>
+<span class="text-sm">Min â‚¦ 4,000</span>
 </div>
 </div>
 </div>
@@ -217,7 +217,7 @@ const stitchHtml = `<!-- TopNavBar -->
 <div class="flex justify-between items-center pb-4 border-b border-surface-container">
 <div>
 <p class="text-on-surface-variant text-sm uppercase tracking-wider mb-1">Starting from</p>
-<p class="font-price-display text-price-display text-primary">₦ 75,000 <span class="text-sm font-normal text-on-surface-variant">/ event</span></p>
+<p class="font-price-display text-price-display text-primary">â‚¦ 75,000 <span class="text-sm font-normal text-on-surface-variant">/ event</span></p>
 </div>
 <div class="flex items-center gap-1">
 <span class="material-symbols-outlined text-gold-leaf" style="font-variation-settings: 'FILL' 1;">star</span>
@@ -254,7 +254,7 @@ const stitchHtml = `<!-- TopNavBar -->
 <div class="flex justify-between items-center pb-4 border-b border-surface-container">
 <div>
 <p class="text-on-surface-variant text-sm uppercase tracking-wider mb-1">Starting from</p>
-<p class="font-price-display text-price-display text-primary">₦ 60,000 <span class="text-sm font-normal text-on-surface-variant">/ event</span></p>
+<p class="font-price-display text-price-display text-primary">â‚¦ 60,000 <span class="text-sm font-normal text-on-surface-variant">/ event</span></p>
 </div>
 <div class="flex items-center gap-1">
 <span class="material-symbols-outlined text-gold-leaf" style="font-variation-settings: 'FILL' 1;">star</span>
@@ -291,7 +291,7 @@ const stitchHtml = `<!-- TopNavBar -->
 <div class="flex justify-between items-center pb-4 border-b border-surface-container">
 <div>
 <p class="text-on-surface-variant text-sm uppercase tracking-wider mb-1">Starting from</p>
-<p class="font-price-display text-price-display text-primary">₦ 90,000 <span class="text-sm font-normal text-on-surface-variant">/ event</span></p>
+<p class="font-price-display text-price-display text-primary">â‚¦ 90,000 <span class="text-sm font-normal text-on-surface-variant">/ event</span></p>
 </div>
 <div class="flex items-center gap-1">
 <span class="material-symbols-outlined text-gold-leaf" style="font-variation-settings: 'FILL' 1;">star</span>
@@ -328,42 +328,42 @@ const stitchHtml = `<!-- TopNavBar -->
 <div class="space-y-4">
 <p class="font-label-lg text-on-surface font-semibold">About</p>
 <nav class="flex flex-col gap-2">
-<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="#">About</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="#">Story</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="#">Careers</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="/about">About</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="/story">Story</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="/careers">Careers</a>
 <a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="#">Investor Relations</a>
 </nav>
 </div>
 <div class="space-y-4">
 <p class="font-label-lg text-on-surface font-semibold">Services</p>
 <nav class="flex flex-col gap-2">
-<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="#">Stays</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="#">Ride</a>
-<a class="text-primary font-semibold font-body-md" href="#">Eats</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="#">Glow</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="/stays">Stays</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="/ride">Ride</a>
+<a class="text-primary font-semibold font-body-md" href="/eats">Eats</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="/glow">Glow</a>
 </nav>
 </div>
 <div class="space-y-4">
 <p class="font-label-lg text-on-surface font-semibold">Partners</p>
 <nav class="flex flex-col gap-2">
-<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="#">Become a Pro</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="/pro-onboarding">Become a Pro</a>
 <a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="#">Host Your Space</a>
 <a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="#">Driver Sign-Up</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="#">Partner</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="/partner">Partner</a>
 </nav>
 </div>
 <div class="space-y-4">
 <p class="font-label-lg text-on-surface font-semibold">Support</p>
 <nav class="flex flex-col gap-2">
-<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="#">Help Centre</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="#">Safety Centre</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="/help">Help Centre</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="/safety">Safety Centre</a>
 <a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="#">Privacy Policy</a>
 <a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="#">Terms of Service</a>
 </nav>
 </div>
 </div>
 <div class="border-t border-outline-variant/30 px-margin-desktop py-8 max-w-container-max mx-auto text-center lg:text-left">
-<p class="text-on-surface-variant text-sm font-body-md">© 2024 JAHRAH. All rights reserved. Nigeria | Ghana | Kenya | South Africa | ₦ NGN</p>
+<p class="text-on-surface-variant text-sm font-body-md">Â© 2024 JAHRAH. All rights reserved. Nigeria | Ghana | Kenya | South Africa | â‚¦ NGN</p>
 </div>
 </footer>
 <script>
@@ -397,3 +397,4 @@ const stitchHtml = `<!-- TopNavBar -->
 export default function EatsFoodPrivateChefsPage() {
   return <div dangerouslySetInnerHTML={{ __html: stitchHtml }} />
 }
+

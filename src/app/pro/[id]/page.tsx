@@ -5,13 +5,13 @@ const stitchHtml = `<!-- Top Navigation Bar -->
 <div class="flex justify-between items-center px-margin-desktop py-4 w-full max-w-container-max mx-auto">
 <div class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed">JAHRAH</div>
 <nav class="hidden md:flex items-center gap-8">
-<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" href="#">Stays</a>
-<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" href="#">Ride</a>
-<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" href="#">Eats</a>
-<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" href="#">Fix</a>
-<a class="font-label-lg text-label-lg text-primary font-bold border-b-2 border-primary pb-1" href="#">Glow</a>
-<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" href="#">Events</a>
-<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" href="#">Market</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" href="/stays">Stays</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" href="/ride">Ride</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" href="/eats">Eats</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" href="/fix">Fix</a>
+<a class="font-label-lg text-label-lg text-primary font-bold border-b-2 border-primary pb-1" href="/glow">Glow</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" href="/events">Events</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" href="/market">Market</a>
 </nav>
 <div class="flex items-center gap-6">
 <span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary">location_on</span>
@@ -283,27 +283,27 @@ const stitchHtml = `<!-- Top Navigation Bar -->
 <div>
 <h4 class="font-bold text-label-lg mb-6 uppercase tracking-widest text-primary">Company</h4>
 <ul class="space-y-4 text-on-surface-variant font-body-md">
-<li><a class="hover:text-primary transition-colors" href="#">About</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Story</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Careers</a></li>
+<li><a class="hover:text-primary transition-colors" href="/about">About</a></li>
+<li><a class="hover:text-primary transition-colors" href="/story">Story</a></li>
+<li><a class="hover:text-primary transition-colors" href="/careers">Careers</a></li>
 <li><a class="hover:text-primary transition-colors" href="#">Blog</a></li>
 </ul>
 </div>
 <div>
 <h4 class="font-bold text-label-lg mb-6 uppercase tracking-widest text-primary">Professionals</h4>
 <ul class="space-y-4 text-on-surface-variant font-body-md">
-<li><a class="hover:text-primary transition-colors" href="#">Become a Pro</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Pro Dashboard</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Pro Academy</a></li>
+<li><a class="hover:text-primary transition-colors" href="/pro-onboarding">Become a Pro</a></li>
+<li><a class="hover:text-primary transition-colors" href="/pro-dashboard">Pro Dashboard</a></li>
+<li><a class="hover:text-primary transition-colors" href="/pro-academy">Pro Academy</a></li>
 <li><a class="hover:text-primary transition-colors" href="#">Guidelines</a></li>
 </ul>
 </div>
 <div>
 <h4 class="font-bold text-label-lg mb-6 uppercase tracking-widest text-primary">Support</h4>
 <ul class="space-y-4 text-on-surface-variant font-body-md">
-<li><a class="hover:text-primary transition-colors" href="#">Help Centre</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Safety Centre</a></li>
-<li><a class="hover:text-primary transition-colors" href="#">Privacy</a></li>
+<li><a class="hover:text-primary transition-colors" href="/help">Help Centre</a></li>
+<li><a class="hover:text-primary transition-colors" href="/safety">Safety Centre</a></li>
+<li><a class="hover:text-primary transition-colors" href="/privacy">Privacy</a></li>
 <li><a class="hover:text-primary transition-colors" href="#">Terms</a></li>
 </ul>
 </div>

@@ -1,4 +1,4 @@
-export const metadata = { title: "JAHRAH Pro Onboarding — Build Your Profile" }
+﻿export const metadata = { title: "JAHRAH Pro Onboarding â€” Build Your Profile" }
 
 const stitchHtml = `<script id="tailwind-config">
         tailwind.config = {
@@ -282,9 +282,9 @@ const stitchHtml = `<script id="tailwind-config">
 <!-- Simple Footer for Transactional flow -->
 <footer class="bg-surface-container-lowest border-t border-surface-container-high py-12 px-margin-desktop">
 <div class="max-w-container-max mx-auto flex flex-col md:flex-row justify-between items-center gap-8">
-<p class="font-body-md text-body-md text-on-surface-variant">© 2024 JAHRAH. All rights reserved. Nigeria | Ghana | Kenya | South Africa | ₦ NGN</p>
+<p class="font-body-md text-body-md text-on-surface-variant">Â© 2024 JAHRAH. All rights reserved. Nigeria | Ghana | Kenya | South Africa | â‚¦ NGN</p>
 <div class="flex gap-8">
-<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" href="#">Privacy</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" href="/privacy">Privacy</a>
 <a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" href="#">Terms</a>
 <a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" href="#">Safety</a>
 </div>
@@ -309,3 +309,4 @@ const stitchHtml = `<script id="tailwind-config">
 export default function ProOnboardingBuildYourProfilePage() {
   return <div dangerouslySetInnerHTML={{ __html: stitchHtml }} />
 }
+

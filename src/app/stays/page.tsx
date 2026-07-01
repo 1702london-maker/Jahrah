@@ -1,4 +1,4 @@
-export const metadata = { title: "JAHRAH Stays | Search Results - Lagos" }
+﻿export const metadata = { title: "JAHRAH Stays | Search Results - Lagos" }
 
 const stitchHtml = `<!-- TopNavBar -->
 <header class="bg-surface dark:bg-surface-dim shadow-sm docked full-width top-0 sticky z-50">
@@ -6,13 +6,13 @@ const stitchHtml = `<!-- TopNavBar -->
 <div class="flex items-center gap-8">
 <span class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed">JAHRAH</span>
 <nav class="hidden md:flex gap-6">
-<a class="text-primary font-bold border-b-2 border-primary pb-1 font-label-lg text-label-lg" href="#">Stays</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors font-label-lg text-label-lg" href="#">Ride</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors font-label-lg text-label-lg" href="#">Eats</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors font-label-lg text-label-lg" href="#">Fix</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors font-label-lg text-label-lg" href="#">Glow</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors font-label-lg text-label-lg" href="#">Events</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors font-label-lg text-label-lg" href="#">Market</a>
+<a class="text-primary font-bold border-b-2 border-primary pb-1 font-label-lg text-label-lg" href="/stays">Stays</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-lg text-label-lg" href="/ride">Ride</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-lg text-label-lg" href="/eats">Eats</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-lg text-label-lg" href="/fix">Fix</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-lg text-label-lg" href="/glow">Glow</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-lg text-label-lg" href="/events">Events</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-label-lg text-label-lg" href="/market">Market</a>
 </nav>
 </div>
 <div class="flex items-center gap-6">
@@ -21,8 +21,8 @@ const stitchHtml = `<!-- TopNavBar -->
 <span class="material-symbols-outlined hover:text-primary cursor-pointer transition-all">notifications</span>
 </div>
 <div class="hidden lg:flex items-center gap-4">
-<button class="font-label-lg text-label-lg text-primary hover:opacity-80 transition-opacity">List your space</button>
-<button class="bg-primary text-on-primary px-6 py-3 rounded-lg font-label-lg text-label-lg hover:scale-95 transition-transform">Sign in / Register</button>
+<button class="font-label-lg text-label-lg text-primary hover:opacity-80 transition-opacity"onclick="window.location.href='/pro-onboarding'">List your space</button>
+<button class="bg-primary text-on-primary px-6 py-3 rounded-lg font-label-lg text-label-lg hover:scale-95 transition-transform"onclick="window.location.href='/dashboard'">Sign in / Register</button>
 </div>
 </div>
 </div>
@@ -92,11 +92,11 @@ const stitchHtml = `<!-- TopNavBar -->
 <div class="flex justify-between items-start mb-1">
 <h3 class="font-headline-md text-[20px] text-on-surface line-clamp-1">Luxury Waterfront Penthouse</h3>
 <div class="text-right">
-<span class="font-price-display text-price-display text-primary">₦ 125,000</span>
+<span class="font-price-display text-price-display text-primary">â‚¦ 125,000</span>
 <span class="block text-on-surface-variant font-label-lg text-[12px]">per night</span>
 </div>
 </div>
-<p class="text-on-surface-variant font-body-md text-sm mb-3">Victoria Island, Lagos • Entire Apartment</p>
+<p class="text-on-surface-variant font-body-md text-sm mb-3">Victoria Island, Lagos â€¢ Entire Apartment</p>
 <div class="flex items-center gap-4 text-on-surface-variant">
 <div class="flex items-center gap-1">
 <span class="material-symbols-outlined text-[18px]">bed</span>
@@ -129,11 +129,11 @@ const stitchHtml = `<!-- TopNavBar -->
 <div class="flex justify-between items-start mb-1">
 <h3 class="font-headline-md text-[20px] text-on-surface line-clamp-1">The Heritage Boutique Villa</h3>
 <div class="text-right">
-<span class="font-price-display text-price-display text-primary">₦ 85,000</span>
+<span class="font-price-display text-price-display text-primary">â‚¦ 85,000</span>
 <span class="block text-on-surface-variant font-label-lg text-[12px]">per night</span>
 </div>
 </div>
-<p class="text-on-surface-variant font-body-md text-sm mb-3">Ikoyi, Lagos • Private Room in Villa</p>
+<p class="text-on-surface-variant font-body-md text-sm mb-3">Ikoyi, Lagos â€¢ Private Room in Villa</p>
 <div class="flex items-center gap-4 text-on-surface-variant">
 <div class="flex items-center gap-1">
 <span class="material-symbols-outlined text-[18px]">king_bed</span>
@@ -166,11 +166,11 @@ const stitchHtml = `<!-- TopNavBar -->
 <div class="flex justify-between items-start mb-1">
 <h3 class="font-headline-md text-[20px] text-on-surface line-clamp-1">Urban Chic Artist Loft</h3>
 <div class="text-right">
-<span class="font-price-display text-price-display text-primary">₦ 55,000</span>
+<span class="font-price-display text-price-display text-primary">â‚¦ 55,000</span>
 <span class="block text-on-surface-variant font-label-lg text-[12px]">per night</span>
 </div>
 </div>
-<p class="text-on-surface-variant font-body-md text-sm mb-3">Lekki Phase 1, Lagos • Entire Studio</p>
+<p class="text-on-surface-variant font-body-md text-sm mb-3">Lekki Phase 1, Lagos â€¢ Entire Studio</p>
 <div class="flex items-center gap-4 text-on-surface-variant">
 <div class="flex items-center gap-1">
 <span class="material-symbols-outlined text-[18px]">desk</span>
@@ -210,7 +210,7 @@ const stitchHtml = `<!-- TopNavBar -->
 <div class="absolute top-[40%] left-[45%] transform -translate-x-1/2 -translate-y-1/2 cursor-pointer transition-all duration-300" id="pin-1">
 <div class="relative flex flex-col items-center">
 <div class="bg-primary text-on-primary px-3 py-1.5 rounded-full font-bold shadow-lg text-[14px] whitespace-nowrap pin-label transition-transform hover:scale-110">
-                            ₦ 125K
+                            â‚¦ 125K
                         </div>
 <div class="w-2 h-2 bg-primary rounded-full mt-1 border-2 border-white shadow-sm"></div>
 </div>
@@ -219,7 +219,7 @@ const stitchHtml = `<!-- TopNavBar -->
 <div class="absolute top-[35%] left-[55%] transform -translate-x-1/2 -translate-y-1/2 cursor-pointer transition-all duration-300" id="pin-2">
 <div class="relative flex flex-col items-center">
 <div class="bg-white text-on-surface px-3 py-1.5 rounded-full font-bold shadow-lg text-[14px] whitespace-nowrap pin-label border border-outline-variant hover:border-primary transition-transform hover:scale-110">
-                            ₦ 85K
+                            â‚¦ 85K
                         </div>
 <div class="w-2 h-2 bg-white rounded-full mt-1 border-2 border-primary shadow-sm"></div>
 </div>
@@ -228,7 +228,7 @@ const stitchHtml = `<!-- TopNavBar -->
 <div class="absolute top-[55%] left-[65%] transform -translate-x-1/2 -translate-y-1/2 cursor-pointer transition-all duration-300" id="pin-3">
 <div class="relative flex flex-col items-center">
 <div class="bg-white text-on-surface px-3 py-1.5 rounded-full font-bold shadow-lg text-[14px] whitespace-nowrap pin-label border border-outline-variant hover:border-primary transition-transform hover:scale-110">
-                            ₦ 55K
+                            â‚¦ 55K
                         </div>
 <div class="w-2 h-2 bg-white rounded-full mt-1 border-2 border-primary shadow-sm"></div>
 </div>
@@ -291,7 +291,7 @@ const stitchHtml = `<!-- TopNavBar -->
 </div>
 </div>
 <div class="px-margin-desktop py-6 border-t border-outline-variant text-center md:text-left">
-<p class="font-body-md text-sm text-on-surface-variant">© 2024 JAHRAH. All rights reserved. Nigeria | Ghana | Kenya | South Africa | ₦ NGN</p>
+<p class="font-body-md text-sm text-on-surface-variant">Â© 2024 JAHRAH. All rights reserved. Nigeria | Ghana | Kenya | South Africa | â‚¦ NGN</p>
 </div>
 </footer>
 <script>
@@ -326,3 +326,4 @@ const stitchHtml = `<!-- TopNavBar -->
 export default function StaysSearchResultsPage() {
   return <div dangerouslySetInnerHTML={{ __html: stitchHtml }} />
 }
+

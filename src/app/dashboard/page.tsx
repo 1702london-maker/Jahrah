@@ -1,4 +1,4 @@
-export const metadata = { title: "My JAHRAH — User Dashboard" }
+﻿export const metadata = { title: "My JAHRAH â€” User Dashboard" }
 
 const stitchHtml = `<!-- TopNavBar from Shared Components -->
 <header class="bg-surface dark:bg-surface-dim shadow-sm docked full-width top-0 sticky z-50">
@@ -6,13 +6,13 @@ const stitchHtml = `<!-- TopNavBar from Shared Components -->
 <div class="flex items-center gap-8">
 <span class="font-headline-md text-headline-md font-bold text-primary dark:text-primary-fixed">JAHRAH</span>
 <div class="hidden md:flex gap-6">
-<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" href="#">Stays</a>
-<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" href="#">Ride</a>
-<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" href="#">Eats</a>
-<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" href="#">Fix</a>
-<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" href="#">Glow</a>
-<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" href="#">Events</a>
-<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" href="#">Market</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" href="/stays">Stays</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" href="/ride">Ride</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" href="/eats">Eats</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" href="/fix">Fix</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" href="/glow">Glow</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" href="/events">Events</a>
+<a class="font-label-lg text-label-lg text-on-surface-variant hover:text-primary transition-colors" href="/market">Market</a>
 </div>
 </div>
 <div class="flex items-center gap-4">
@@ -40,7 +40,7 @@ const stitchHtml = `<!-- TopNavBar from Shared Components -->
 <span class="material-symbols-outlined">account_balance_wallet</span>
 <div class="flex flex-col">
 <span class="font-label-lg">JAHRAH Wallet</span>
-<span class="text-xs text-primary font-bold">₦ 12,500</span>
+<span class="text-xs text-primary font-bold">â‚¦ 12,500</span>
 </div>
 </a>
 <a class="flex items-center gap-3 px-4 py-3 rounded-lg text-on-surface-variant hover:bg-surface-container transition-all" href="#">
@@ -69,7 +69,7 @@ const stitchHtml = `<!-- TopNavBar from Shared Components -->
 <section class="mb-12">
 <div class="flex justify-between items-end">
 <div>
-<h1 class="font-headline-lg text-headline-lg text-on-surface mb-1">Good morning, Chioma 👋</h1>
+<h1 class="font-headline-lg text-headline-lg text-on-surface mb-1">Good morning, Chioma ðŸ‘‹</h1>
 <div class="flex items-center gap-2 text-on-surface-variant">
 <span class="material-symbols-outlined text-sm">location_on</span>
 <span class="font-label-lg">Lagos, Nigeria</span>
@@ -210,7 +210,7 @@ const stitchHtml = `<!-- TopNavBar from Shared Components -->
 <div class="p-4">
 <h5 class="font-bold text-on-surface truncate">Atlantic View Villa</h5>
 <p class="text-on-surface-variant text-sm mb-3">Cape Town, SA</p>
-<p class="font-bold text-primary">₦ 155,000 <span class="font-normal text-on-surface-variant text-xs">/ night</span></p>
+<p class="font-bold text-primary">â‚¦ 155,000 <span class="font-normal text-on-surface-variant text-xs">/ night</span></p>
 </div>
 </div>
 <!-- Wishlist Item 2 -->
@@ -224,7 +224,7 @@ const stitchHtml = `<!-- TopNavBar from Shared Components -->
 <div class="p-4">
 <h5 class="font-bold text-on-surface truncate">Mara Luxury Camp</h5>
 <p class="text-on-surface-variant text-sm mb-3">Maasai Mara, KE</p>
-<p class="font-bold text-primary">₦ 210,000 <span class="font-normal text-on-surface-variant text-xs">/ night</span></p>
+<p class="font-bold text-primary">â‚¦ 210,000 <span class="font-normal text-on-surface-variant text-xs">/ night</span></p>
 </div>
 </div>
 <!-- Wishlist Item 3 -->
@@ -238,7 +238,7 @@ const stitchHtml = `<!-- TopNavBar from Shared Components -->
 <div class="p-4">
 <h5 class="font-bold text-on-surface truncate">The Artisan Loft</h5>
 <p class="text-on-surface-variant text-sm mb-3">Nairobi, KE</p>
-<p class="font-bold text-primary">₦ 85,000 <span class="font-normal text-on-surface-variant text-xs">/ night</span></p>
+<p class="font-bold text-primary">â‚¦ 85,000 <span class="font-normal text-on-surface-variant text-xs">/ night</span></p>
 </div>
 </div>
 </div>
@@ -255,25 +255,25 @@ const stitchHtml = `<!-- TopNavBar from Shared Components -->
 </div>
 <div class="flex flex-col gap-4">
 <h6 class="font-bold uppercase text-xs tracking-widest text-on-surface mb-2">Company</h6>
-<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="#">About</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="#">Story</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="#">Careers</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="/about">About</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="/story">Story</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="/careers">Careers</a>
 </div>
 <div class="flex flex-col gap-4">
 <h6 class="font-bold uppercase text-xs tracking-widest text-on-surface mb-2">Services</h6>
-<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="#">Stays</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="#">Ride</a>
-<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="#">Eats</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="/stays">Stays</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="/ride">Ride</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="/eats">Eats</a>
 </div>
 <div class="flex flex-col gap-4">
 <h6 class="font-bold uppercase text-xs tracking-widest text-on-surface mb-2">Support</h6>
-<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="#">Help Centre</a>
+<a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="/help">Help Centre</a>
 <a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="#">Safety</a>
 <a class="text-on-surface-variant hover:text-primary transition-colors font-body-md" href="#">Contact</a>
 </div>
 </div>
 <div class="border-t border-outline-variant pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
-<p class="text-on-surface-variant text-sm">© 2024 JAHRAH. All rights reserved. Nigeria | Ghana | Kenya | South Africa | ₦ NGN</p>
+<p class="text-on-surface-variant text-sm">Â© 2024 JAHRAH. All rights reserved. Nigeria | Ghana | Kenya | South Africa | â‚¦ NGN</p>
 <div class="flex gap-6">
 <span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary">face_nod</span>
 <span class="material-symbols-outlined text-on-surface-variant cursor-pointer hover:text-primary">language</span>
@@ -282,3 +282,4 @@ const stitchHtml = `<!-- TopNavBar from Shared Components -->
 export default function MyJahrahUserDashboardPage() {
   return <div dangerouslySetInnerHTML={{ __html: stitchHtml }} />
 }
+
