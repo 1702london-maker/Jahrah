@@ -18,8 +18,8 @@ const stitchHtml = `<!-- TopNavBar -->
 <span class="material-symbols-outlined text-on-surface-variant hover:text-primary cursor-pointer">location_on</span>
 <span class="material-symbols-outlined text-on-surface-variant hover:text-primary cursor-pointer">notifications</span>
 </div>
-<button class="font-label-lg text-label-lg text-primary hover:opacity-80 hidden lg:block"onclick="window.location.href='/pro-onboarding'">List your space</button>
-<button class="bg-sunset-orange text-white px-6 py-2 rounded-full font-label-lg text-label-lg hover:scale-95 transition-all"onclick="window.location.href='/dashboard'">Sign in / Register</button>
+<a href="/pro-onboarding" class="font-label-lg text-label-lg text-primary hover:opacity-80 hidden lg:block">List your space</a>
+<a href="/dashboard" class="bg-sunset-orange text-white px-6 py-2 rounded-full font-label-lg text-label-lg hover:scale-95 transition-all">Sign in / Register</a>
 </div>
 </div>
 </nav>
@@ -59,48 +59,48 @@ const stitchHtml = `<!-- TopNavBar -->
 <!-- Quick Access Pills -->
 <section class="py-12 bg-parchment">
 <div class="max-w-container-max mx-auto px-margin-desktop overflow-x-auto hide-scrollbar flex justify-center gap-6">
-<button class="flex flex-col items-center gap-2 group min-w-[80px]">
+<a href="/stays" class="flex flex-col items-center gap-2 group min-w-[80px]">
 <div class="w-16 h-16 rounded-full bg-white shadow-sm flex items-center justify-center group-hover:bg-primary-fixed transition-colors">
 <span class="material-symbols-outlined text-primary text-3xl">house</span>
 </div>
 <span class="font-label-lg text-label-lg">Stays</span>
-</button>
-<button class="flex flex-col items-center gap-2 group min-w-[80px]">
+</a>
+<a href="/ride" class="flex flex-col items-center gap-2 group min-w-[80px]">
 <div class="w-16 h-16 rounded-full bg-white shadow-sm flex items-center justify-center group-hover:bg-primary-fixed transition-colors">
 <span class="material-symbols-outlined text-primary text-3xl">car_rental</span>
 </div>
 <span class="font-label-lg text-label-lg">Ride</span>
-</button>
-<button class="flex flex-col items-center gap-2 group min-w-[80px]">
+</a>
+<a href="/eats" class="flex flex-col items-center gap-2 group min-w-[80px]">
 <div class="w-16 h-16 rounded-full bg-white shadow-sm flex items-center justify-center group-hover:bg-primary-fixed transition-colors">
 <span class="material-symbols-outlined text-primary text-3xl">restaurant</span>
 </div>
 <span class="font-label-lg text-label-lg">Eats</span>
-</button>
-<button class="flex flex-col items-center gap-2 group min-w-[80px]">
+</a>
+<a href="/fix" class="flex flex-col items-center gap-2 group min-w-[80px]">
 <div class="w-16 h-16 rounded-full bg-white shadow-sm flex items-center justify-center group-hover:bg-primary-fixed transition-colors">
 <span class="material-symbols-outlined text-primary text-3xl">build</span>
 </div>
 <span class="font-label-lg text-label-lg">Fix</span>
-</button>
-<button class="flex flex-col items-center gap-2 group min-w-[80px]">
+</a>
+<a href="/glow" class="flex flex-col items-center gap-2 group min-w-[80px]">
 <div class="w-16 h-16 rounded-full bg-white shadow-sm flex items-center justify-center group-hover:bg-primary-fixed transition-colors">
 <span class="material-symbols-outlined text-primary text-3xl">auto_awesome</span>
 </div>
 <span class="font-label-lg text-label-lg">Glow</span>
-</button>
-<button class="flex flex-col items-center gap-2 group min-w-[80px]">
+</a>
+<a href="/events" class="flex flex-col items-center gap-2 group min-w-[80px]">
 <div class="w-16 h-16 rounded-full bg-white shadow-sm flex items-center justify-center group-hover:bg-primary-fixed transition-colors">
 <span class="material-symbols-outlined text-primary text-3xl">celebration</span>
 </div>
 <span class="font-label-lg text-label-lg">Events</span>
-</button>
-<button class="flex flex-col items-center gap-2 group min-w-[80px]">
+</a>
+<a href="/market" class="flex flex-col items-center gap-2 group min-w-[80px]">
 <div class="w-16 h-16 rounded-full bg-white shadow-sm flex items-center justify-center group-hover:bg-primary-fixed transition-colors">
 <span class="material-symbols-outlined text-primary text-3xl">shopping_bag</span>
 </div>
 <span class="font-label-lg text-label-lg">Market</span>
-</button>
+</a>
 </div>
 </section>
 <!-- Top Stays in Lagos -->
@@ -121,7 +121,7 @@ const stitchHtml = `<!-- TopNavBar -->
 </div>
 <div class="p-6">
 <div class="flex justify-between items-start mb-2">
-<h3 class="font-headline-md text-xl"onclick="window.location.href='/stays/1'" style="cursor:pointer">The Eko Loft</h3>
+<a href="/stays/1"><h3 class="font-headline-md text-xl" style="cursor:pointer">The Eko Loft</h3></a>
 <div class="flex items-center gap-1">
 <span class="material-symbols-outlined text-gold-leaf text-lg">star</span>
 <span class="font-label-lg text-sm">4.9</span>
@@ -141,7 +141,7 @@ const stitchHtml = `<!-- TopNavBar -->
 </div>
 <div class="p-6">
 <div class="flex justify-between items-start mb-2">
-<h3 class="font-headline-md text-xl"onclick="window.location.href='/stays/2'" style="cursor:pointer">Azure Sands Cottage</h3>
+<a href="/stays/2"><h3 class="font-headline-md text-xl" style="cursor:pointer">Azure Sands Cottage</h3></a>
 <div class="flex items-center gap-1">
 <span class="material-symbols-outlined text-gold-leaf text-lg">star</span>
 <span class="font-label-lg text-sm">4.8</span>
@@ -162,7 +162,7 @@ const stitchHtml = `<!-- TopNavBar -->
 </div>
 <div class="p-6">
 <div class="flex justify-between items-start mb-2">
-<h3 class="font-headline-md text-xl"onclick="window.location.href='/stays/3'" style="cursor:pointer">Ikoyi Zen Suite</h3>
+<a href="/stays/3"><h3 class="font-headline-md text-xl" style="cursor:pointer">Ikoyi Zen Suite</h3></a>
 <div class="flex items-center gap-1">
 <span class="material-symbols-outlined text-gold-leaf text-lg">star</span>
 <span class="font-label-lg text-sm">5.0</span>
@@ -181,7 +181,7 @@ const stitchHtml = `<!-- TopNavBar -->
 </div>
 <div class="p-6">
 <div class="flex justify-between items-start mb-2">
-<h3 class="font-headline-md text-xl"onclick="window.location.href='/stays/4'" style="cursor:pointer">Kalakuta Boutique</h3>
+<a href="/stays/4"><h3 class="font-headline-md text-xl" style="cursor:pointer">Kalakuta Boutique</h3></a>
 <div class="flex items-center gap-1">
 <span class="material-symbols-outlined text-gold-leaf text-lg">star</span>
 <span class="font-label-lg text-sm">4.7</span>
@@ -206,7 +206,7 @@ const stitchHtml = `<!-- TopNavBar -->
 <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">verified</span>
 </span>
 </div>
-<h3 class="font-headline-md text-lg mb-1"onclick="window.location.href='/pro/1'" style="cursor:pointer">Chidi O.</h3>
+<a href="/pro/1"><h3 class="font-headline-md text-lg mb-1" style="cursor:pointer">Chidi O.</h3></a>
 <p class="text-primary font-label-lg text-xs uppercase mb-2">Master Electrician</p>
 <div class="flex items-center gap-1 mb-4">
 <span class="material-symbols-outlined text-gold-leaf text-sm">star</span>
@@ -223,7 +223,7 @@ const stitchHtml = `<!-- TopNavBar -->
 <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">verified</span>
 </span>
 </div>
-<h3 class="font-headline-md text-lg mb-1"onclick="window.location.href='/pro/2'" style="cursor:pointer">Amaka B.</h3>
+<a href="/pro/2"><h3 class="font-headline-md text-lg mb-1" style="cursor:pointer">Amaka B.</h3></a>
 <p class="text-primary font-label-lg text-xs uppercase mb-2">Makeup Artist</p>
 <div class="flex items-center gap-1 mb-4">
 <span class="material-symbols-outlined text-gold-leaf text-sm">star</span>
@@ -239,7 +239,7 @@ const stitchHtml = `<!-- TopNavBar -->
 <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">verified</span>
 </span>
 </div>
-<h3 class="font-headline-md text-lg mb-1"onclick="window.location.href='/pro/3'" style="cursor:pointer">Tunde K.</h3>
+<a href="/pro/3"><h3 class="font-headline-md text-lg mb-1" style="cursor:pointer">Tunde K.</h3></a>
 <p class="text-primary font-label-lg text-xs uppercase mb-2">Expert Plumber</p>
 <div class="flex items-center gap-1 mb-4">
 <span class="material-symbols-outlined text-gold-leaf text-sm">star</span>
@@ -255,7 +255,7 @@ const stitchHtml = `<!-- TopNavBar -->
 <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">verified</span>
 </span>
 </div>
-<h3 class="font-headline-md text-lg mb-1"onclick="window.location.href='/pro/4'" style="cursor:pointer">Zainab A.</h3>
+<a href="/pro/4"><h3 class="font-headline-md text-lg mb-1" style="cursor:pointer">Zainab A.</h3></a>
 <p class="text-primary font-label-lg text-xs uppercase mb-2">Home Specialist</p>
 <div class="flex items-center gap-1 mb-4">
 <span class="material-symbols-outlined text-gold-leaf text-sm">star</span>
@@ -271,7 +271,7 @@ const stitchHtml = `<!-- TopNavBar -->
 <span class="material-symbols-outlined text-sm" style="font-variation-settings: 'FILL' 1;">verified</span>
 </span>
 </div>
-<h3 class="font-headline-md text-lg mb-1"onclick="window.location.href='/pro/5'" style="cursor:pointer">Kofi M.</h3>
+<a href="/pro/5"><h3 class="font-headline-md text-lg mb-1" style="cursor:pointer">Kofi M.</h3></a>
 <p class="text-primary font-label-lg text-xs uppercase mb-2">Master Stylist</p>
 <div class="flex items-center gap-1 mb-4">
 <span class="material-symbols-outlined text-gold-leaf text-sm">star</span>
@@ -381,7 +381,7 @@ const stitchHtml = `<!-- TopNavBar -->
 <div class="absolute inset-0 bg-gradient-to-r from-royal-indigo/80 to-transparent flex flex-col justify-center px-12 text-white">
 <h2 class="font-display-lg text-4xl mb-4 max-w-md">Plan Your Next Event with Ease.</h2>
 <p class="font-body-lg mb-8 max-w-md opacity-90">From intimate gatherings to grand celebrations, JAHRAH connects you with the best planners and venues.</p>
-<button class="bg-white text-royal-indigo px-8 py-4 rounded-full font-label-lg text-label-lg hover:bg-sunset-orange hover:text-white transition-all w-fit"onclick="window.location.href='/events'">Start Planning</button>
+<a href="/events" class="bg-white text-royal-indigo px-8 py-4 rounded-full font-label-lg text-label-lg hover:bg-sunset-orange hover:text-white transition-all w-fit">Start Planning</a>
 </div>
 </div>
 </section>
@@ -391,7 +391,7 @@ const stitchHtml = `<!-- TopNavBar -->
 <div class="md:w-1/2 p-16 flex flex-col justify-center">
 <h2 class="font-headline-lg text-headline-lg mb-6 text-primary">Your Skill, Your Schedule, Your Success.</h2>
 <p class="font-body-lg text-on-surface-variant mb-10">Join thousands of professionals across Africa growing their business on JAHRAH. Reach new customers and manage your workflow seamlessly.</p>
-<button class="bg-sunset-orange text-white px-10 py-5 rounded-full font-label-lg text-lg hover:scale-95 transition-all w-fit"onclick="window.location.href='/pro-onboarding'">Join as a Pro</button>
+<a href="/pro-onboarding" class="bg-sunset-orange text-white px-10 py-5 rounded-full font-label-lg text-lg hover:scale-95 transition-all w-fit">Join as a Pro</a>
 </div>
 <div class="md:w-1/2 h-[500px]">
 <img class="w-full h-full object-cover" data-alt="A group of smiling, diverse African professionals standing together in a bright, modern office space. The group includes a female photographer, a male carpenter with tools, a chef in a white coat, and a female tech professional. They look confident, happy, and empowered, representing the community of JAHRAH Pros." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYQJa5RtIhOrNO3HKCc_mZur1PV-bQE7yz0QuE2zKw7Qg3kqmdTx7SWCIbXF3KNU-dlHGaiwIi3cfh_G6KQ788qRCoVi5CmkvHXkv02HqZoelOB5KnQkLiXUGGsISYZYjVSRYCPTyv88zjVFV6Gm5kbZa5XXClIKhHlWlKzrY2KojA4olVyRSoW0kVrU3FBAwo7BZXygmAcCdIgAxLGIqN4dPrvhQnnratHRKNDZrh9PVG8pMWm-C5_DDQkAZ16uDG8DcJB_HiUzs"/>
