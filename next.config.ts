@@ -14,6 +14,7 @@ const nextConfig: NextConfig = {
         { source: '/glow', destination: '/stitch/glow.html' },
         { source: '/events', destination: '/stitch/events.html' },
         { source: '/market', destination: '/stitch/market.html' },
+        // NOTE: /market/* sub-routes are handled by Next.js App Router (not rewritten to stitch)
         { source: '/mobile', destination: '/stitch/mobile.html' },
         { source: '/dashboard', destination: '/stitch/dashboard.html' },
         { source: '/pro-dashboard', destination: '/stitch/pro-dashboard.html' },
