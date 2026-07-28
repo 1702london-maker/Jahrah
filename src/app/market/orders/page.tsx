@@ -1,3 +1,5 @@
+export const dynamic = 'force-dynamic'
+
 import { createClient } from '@supabase/supabase-js'
 import { getUserOrders } from '@/lib/market/supabase'
 import { FulfilmentBadge } from '@/components/market/FulfilmentBadge'
@@ -8,7 +10,7 @@ import { redirect } from 'next/navigation'
 import type { OrderStatus } from '@/types/market'
 
 async function getUser() {
-  const cookieStore = cookies()
+  const cookieStore = await cookies()
   const supabase = createClient(
     process.env.NEXT_PUBLIC_SUPABASE_URL!,
     process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,

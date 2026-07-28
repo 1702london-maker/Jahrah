@@ -1,3 +1,5 @@
+export const dynamic = 'force-dynamic'
+
 import { getProducts } from '@/lib/market/supabase'
 import { ProductGrid } from '@/components/market/ProductGrid'
 import Link from 'next/link'
@@ -8,9 +10,6 @@ const CATEGORIES = [
   'health', 'art_crafts', 'kids', 'sports', 'automotive',
 ]
 
-export async function generateStaticParams() {
-  return CATEGORIES.map((c) => ({ category: c }))
-}
 
 export async function generateMetadata({ params }: { params: { category: string } }): Promise<Metadata> {
   const label = params.category.replace(/_/g, ' ')

@@ -1,3 +1,5 @@
+export const dynamic = 'force-dynamic'
+
 import { createClient } from '@supabase/supabase-js'
 import { FulfilmentBadge } from '@/components/market/FulfilmentBadge'
 import { formatPrice, formatRelativeTime } from '@/lib/market/format'

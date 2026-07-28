@@ -1,3 +1,5 @@
+export const dynamic = 'force-dynamic'
+
 import { getVendorBySlug, getProducts } from '@/lib/market/supabase'
 import { TrustScore } from '@/components/market/TrustScore'
 import { ProductGrid } from '@/components/market/ProductGrid'

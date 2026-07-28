@@ -1,3 +1,5 @@
+export const dynamic = 'force-dynamic'
+
 import { getProductBySlug, getProducts } from '@/lib/market/supabase'
 import { PriceDisplay } from '@/components/market/PriceDisplay'
 import { TrustScore } from '@/components/market/TrustScore'

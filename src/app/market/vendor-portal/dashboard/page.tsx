@@ -1,3 +1,5 @@
+export const dynamic = 'force-dynamic'
+
 import { createClient } from '@supabase/supabase-js'
 import { cookies } from 'next/headers'
 import { redirect } from 'next/navigation'
@@ -29,7 +31,7 @@ async function getVendorData(userId: string) {
 }
 
 async function getUser() {
-  const cookieStore = cookies()
+  const cookieStore = await cookies()
   const supabase = createClient(
     process.env.NEXT_PUBLIC_SUPABASE_URL!,
     process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!,

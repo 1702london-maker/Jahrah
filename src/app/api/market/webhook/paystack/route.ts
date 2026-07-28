@@ -39,12 +39,14 @@ export async function POST(req: NextRequest) {
           paystack_transaction_id: transactionId,
         }).eq('id', order.id)
 
-        // Update vendor stats
+        // Update vendor stats (best-effort, ignore errors)
         for (const item of (order as any).items ?? []) {
-          await admin.rpc('update_vendor_sales', {
-            vendor_id_input: item.vendor_id,
-            qty: item.quantity,
-          }).catch(() => null)
+          try {
+            await admin.rpc('update_vendor_sales', {
+              vendor_id_input: item.vendor_id,
+              qty: item.quantity,
+            })
+          } catch (_) {}
         }
       }
     }

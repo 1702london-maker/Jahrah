@@ -1,10 +1,12 @@
 import { createClient } from '@supabase/supabase-js'
 import type { Product, Vendor, CollectionPoint, Order, CartItem } from '@/types/market'
 
-const supabase = createClient(
-  process.env.NEXT_PUBLIC_SUPABASE_URL!,
-  process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
-)
+// Lazy initializers — never called at module-load time so build doesn't need env vars
+const getClient = () =>
+  createClient(
+    process.env.NEXT_PUBLIC_SUPABASE_URL!,
+    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
+  )
 
 export const supabaseAdmin = () =>
   createClient(
@@ -21,7 +23,8 @@ export async function getProducts(opts: {
   offset?: number
   search?: string
 } = {}): Promise<Product[]> {
-  let q = supabase
+  const db = getClient()
+  let q = db
     .from('products')
     .select('*, vendor:vendors(id,store_name,slug,trust_score,trust_tier,city,state)')
     .eq('is_active', true)
@@ -33,7 +36,7 @@ export async function getProducts(opts: {
   if (opts.offset) q = q.range(opts.offset, opts.offset + (opts.limit ?? 20) - 1)
 
   if (opts.vendorSlug) {
-    const { data: vendor } = await supabase
+    const { data: vendor } = await db
       .from('vendors')
       .select('id')
       .eq('slug', opts.vendorSlug)
@@ -47,7 +50,7 @@ export async function getProducts(opts: {
 }
 
 export async function getProductBySlug(slug: string): Promise<Product | null> {
-  const { data, error } = await supabase
+  const { data, error } = await getClient()
     .from('products')
     .select('*, vendor:vendors(*), reviews:product_reviews(id,rating,title,body,verified_purchase,created_at,user_id)')
     .eq('slug', slug)
@@ -59,7 +62,8 @@ export async function getProductBySlug(slug: string): Promise<Product | null> {
 
 // Vendors
 export async function getVendors(opts: { category?: string; featured?: boolean } = {}): Promise<Vendor[]> {
-  let q = supabase.from('vendors').select('*').eq('is_active', true)
+  const db = getClient()
+  let q = db.from('vendors').select('*').eq('is_active', true)
   if (opts.category) q = q.eq('category', opts.category)
   if (opts.featured) q = q.eq('is_featured', true)
   const { data, error } = await q.order('trust_score', { ascending: false })
@@ -68,7 +72,7 @@ export async function getVendors(opts: { category?: string; featured?: boolean }
 }
 
 export async function getVendorBySlug(slug: string): Promise<Vendor | null> {
-  const { data, error } = await supabase
+  const { data, error } = await getClient()
     .from('vendors')
     .select('*')
     .eq('slug', slug)
@@ -80,7 +84,7 @@ export async function getVendorBySlug(slug: string): Promise<Vendor | null> {
 
 // Collection points
 export async function getCollectionPoints(): Promise<CollectionPoint[]> {
-  const { data, error } = await supabase
+  const { data, error } = await getClient()
     .from('collection_points')
     .select('*')
     .eq('is_active', true)
@@ -91,7 +95,7 @@ export async function getCollectionPoints(): Promise<CollectionPoint[]> {
 
 // Market Orders — uses market_orders / market_order_items (separate from eats orders)
 export async function getOrderByNumber(orderNumber: string, userId: string): Promise<Order | null> {
-  const { data, error } = await supabase
+  const { data, error } = await getClient()
     .from('market_orders')
     .select('*, collection_point:collection_points(*), items:market_order_items(*, product:products(id,name,images,slug))')
     .eq('order_number', orderNumber)
@@ -102,7 +106,7 @@ export async function getOrderByNumber(orderNumber: string, userId: string): Pro
 }
 
 export async function getUserOrders(userId: string): Promise<Order[]> {
-  const { data, error } = await supabase
+  const { data, error } = await getClient()
     .from('market_orders')
     .select('*, collection_point:collection_points(name,city), items:market_order_items(id,product_name,product_image,quantity,unit_price)')
     .eq('user_id', userId)
