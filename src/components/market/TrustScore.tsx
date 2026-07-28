@@ -1,33 +1,64 @@
-'use client'
-import type { TrustTier } from '@/types/market'
+﻿'use client'
 
-const tierConfig: Record<TrustTier, { label: string; color: string; bg: string }> = {
-  new: { label: 'New Seller', color: '#907067', bg: '#f0eded' },
-  rising: { label: 'Rising Star', color: '#286c1e', bg: '#c4eeaf' },
-  trusted: { label: 'Trusted', color: '#705d00', bg: '#fde289' },
-  elite: { label: 'Elite Vendor', color: '#b02f00', bg: '#ffdbd1' },
+const scoreColor = (score: number) => {
+  if (score >= 90) return '#286c1e'
+  if (score >= 75) return '#1565C0'
+  if (score >= 60) return '#E65100'
+  return '#907067'
 }
 
-export function TrustScore({ score, tier }: { score: number; tier: TrustTier }) {
-  const cfg = tierConfig[tier]
+const scoreLabel = (score: number) => {
+  if (score >= 90) return 'Elite'
+  if (score >= 75) return 'Trusted'
+  if (score >= 60) return 'Rising'
+  return 'New'
+}
+
+const SIZE: Record<string, number> = { sm: 24, md: 40, lg: 64 }
+
+export function TrustScore({
+  score,
+  tier,
+  size = 'md',
+}: {
+  score: number
+  tier?: string
+  size?: 'sm' | 'md' | 'lg'
+}) {
+  const px = SIZE[size]
+  const r = 15.9
+  const circumference = 2 * Math.PI * r
+  const filled = (score / 100) * circumference
+  const gap = circumference - filled
+  const color = scoreColor(score)
+  const label = tier ? String(tier).replace(/_/g, ' ') : scoreLabel(score)
+
+  if (size === 'sm') {
+    return (
+      <svg width={px} height={px} viewBox="0 0 36 36" className="-rotate-90 flex-shrink-0">
+        <circle cx="18" cy="18" r={r} fill="none" stroke="#e5e2e1" strokeWidth="4" />
+        <circle cx="18" cy="18" r={r} fill="none" stroke={color} strokeWidth="4"
+          strokeDasharray={`${filled} ${gap}`} strokeLinecap="round" />
+      </svg>
+    )
+  }
+
   return (
     <div className="flex items-center gap-2">
-      <div className="relative w-10 h-10">
-        <svg viewBox="0 0 36 36" className="w-10 h-10 -rotate-90">
-          <circle cx="18" cy="18" r="15.9" fill="none" stroke="#e5e2e1" strokeWidth="3" />
-          <circle
-            cx="18" cy="18" r="15.9" fill="none"
-            stroke={cfg.color} strokeWidth="3"
-            strokeDasharray={`${score} ${100 - score}`}
-            strokeLinecap="round"
-          />
+      <div className="relative flex-shrink-0" style={{ width: px, height: px }}>
+        <svg width={px} height={px} viewBox="0 0 36 36" className="-rotate-90">
+          <circle cx="18" cy="18" r={r} fill="none" stroke="#e5e2e1" strokeWidth="4" />
+          <circle cx="18" cy="18" r={r} fill="none" stroke={color} strokeWidth="4"
+            strokeDasharray={`${filled} ${gap}`} strokeLinecap="round" />
         </svg>
-        <span className="absolute inset-0 flex items-center justify-center text-[10px] font-bold" style={{ color: cfg.color }}>
+        <span className="absolute inset-0 flex items-center justify-center font-bold"
+          style={{ color, fontSize: size === 'lg' ? 14 : 10 }}>
           {score}
         </span>
       </div>
-      <span className="text-xs font-semibold px-2 py-0.5 rounded-full" style={{ color: cfg.color, background: cfg.bg }}>
-        {cfg.label}
+      <span className="text-xs font-semibold px-2 py-0.5 rounded-full capitalize"
+        style={{ color, background: color + '22' }}>
+        {label}
       </span>
     </div>
   )

@@ -1,8 +1,8 @@
-export const dynamic = 'force-dynamic'
+﻿export const dynamic = 'force-dynamic'
 
 import { createClient } from '@supabase/supabase-js'
 import { getUserOrders } from '@/lib/market/supabase'
-import { FulfilmentBadge } from '@/components/market/FulfilmentBadge'
+import { OrderStatusBadge } from '@/components/market/OrderStatusBadge'
 import { formatPrice, formatRelativeTime } from '@/lib/market/format'
 import { cookies } from 'next/headers'
 import Link from 'next/link'
@@ -55,7 +55,7 @@ export default async function OrdersPage() {
                       <p className="font-mono text-sm font-bold text-primary">{order.order_number}</p>
                       <p className="text-xs text-on-surface-variant mt-0.5">{formatRelativeTime(order.created_at)}</p>
                     </div>
-                    <FulfilmentBadge status={order.status as OrderStatus} />
+                    <OrderStatusBadge status={order.status as OrderStatus} />
                   </div>
 
                   <div className="flex gap-2 mb-3 overflow-hidden">
@@ -92,3 +92,4 @@ export default async function OrdersPage() {
     </div>
   )
 }
+

@@ -2,7 +2,7 @@ export const dynamic = 'force-dynamic'
 
 import { createClient } from '@supabase/supabase-js'
 import { getOrderByNumber } from '@/lib/market/supabase'
-import { FulfilmentBadge } from '@/components/market/FulfilmentBadge'
+import { OrderStatusBadge } from '@/components/market/OrderStatusBadge'
 import { OrderStatusTracker } from '@/components/market/OrderStatusTracker'
 import { formatPrice, formatRelativeTime } from '@/lib/market/format'
 import { cookies } from 'next/headers'
@@ -43,7 +43,7 @@ export default async function OrderDetailPage({ params }: { params: { orderNumbe
         <div className="p-5 bg-surface-container-low rounded-2xl">
           <div className="flex items-center justify-between mb-4">
             <h2 className="font-headline-md text-base font-bold">Order Status</h2>
-            <FulfilmentBadge status={order.status as OrderStatus} />
+            <OrderStatusBadge status={order.status as OrderStatus} />
           </div>
           <OrderStatusTracker order={order} />
         </div>

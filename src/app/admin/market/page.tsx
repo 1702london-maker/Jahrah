@@ -1,7 +1,7 @@
-export const dynamic = 'force-dynamic'
+﻿export const dynamic = 'force-dynamic'
 
 import { createClient } from '@supabase/supabase-js'
-import { FulfilmentBadge } from '@/components/market/FulfilmentBadge'
+import { OrderStatusBadge } from '@/components/market/OrderStatusBadge'
 import { formatPrice, formatRelativeTime } from '@/lib/market/format'
 import Link from 'next/link'
 import type { OrderStatus } from '@/types/market'
@@ -92,7 +92,7 @@ export default async function MarketAdminPage() {
                   <p className="font-mono font-bold text-sm text-primary">{order.order_number}</p>
                   <p className="text-xs text-on-surface-variant">{order.customer_name} · {formatRelativeTime(order.created_at)}</p>
                 </div>
-                <FulfilmentBadge status={order.status as OrderStatus} />
+                <OrderStatusBadge status={order.status as OrderStatus} />
                 <p className="font-bold text-sm">{formatPrice(order.total)}</p>
               </div>
             ))}
@@ -121,3 +121,4 @@ export default async function MarketAdminPage() {
     </div>
   )
 }
+
