@@ -23,8 +23,8 @@ export async function POST(req: NextRequest) {
 
       // Find order by reference
       const { data: order, error } = await admin
-        .from('orders')
-        .select('id, status, items:order_items(product_id, vendor_id, quantity)')
+        .from('market_orders')
+        .select('id, status, items:market_order_items(product_id, vendor_id, quantity)')
         .eq('paystack_reference', reference)
         .single()
 
@@ -34,7 +34,7 @@ export async function POST(req: NextRequest) {
       }
 
       if (order.status === 'pending_payment') {
-        await admin.from('orders').update({
+        await admin.from('market_orders').update({
           status: 'payment_confirmed',
           paystack_transaction_id: transactionId,
         }).eq('id', order.id)
@@ -51,7 +51,7 @@ export async function POST(req: NextRequest) {
 
     if (event.event === 'charge.failed') {
       const reference = event.data.reference
-      await admin.from('orders').update({ status: 'cancelled' }).eq('paystack_reference', reference).eq('status', 'pending_payment')
+      await admin.from('market_orders').update({ status: 'cancelled' }).eq('paystack_reference', reference).eq('status', 'pending_payment')
     }
 
     return NextResponse.json({ received: true })

@@ -89,11 +89,11 @@ export async function getCollectionPoints(): Promise<CollectionPoint[]> {
   return (data ?? []) as CollectionPoint[]
 }
 
-// Orders
+// Market Orders — uses market_orders / market_order_items (separate from eats orders)
 export async function getOrderByNumber(orderNumber: string, userId: string): Promise<Order | null> {
   const { data, error } = await supabase
-    .from('orders')
-    .select('*, collection_point:collection_points(*), items:order_items(*, product:products(id,name,images,slug))')
+    .from('market_orders')
+    .select('*, collection_point:collection_points(*), items:market_order_items(*, product:products(id,name,images,slug))')
     .eq('order_number', orderNumber)
     .eq('user_id', userId)
     .single()
@@ -103,15 +103,15 @@ export async function getOrderByNumber(orderNumber: string, userId: string): Pro
 
 export async function getUserOrders(userId: string): Promise<Order[]> {
   const { data, error } = await supabase
-    .from('orders')
-    .select('*, collection_point:collection_points(name,city), items:order_items(id,product_name,product_image,quantity,unit_price)')
+    .from('market_orders')
+    .select('*, collection_point:collection_points(name,city), items:market_order_items(id,product_name,product_image,quantity,unit_price)')
     .eq('user_id', userId)
     .order('created_at', { ascending: false })
   if (error) throw error
   return (data ?? []) as unknown as Order[]
 }
 
-// Cart (server-side helpers used in API routes)
+// Create a market order (called from API route with service-role key)
 export async function createOrder(payload: {
   user_id: string
   items: CartItem[]
@@ -126,15 +126,15 @@ export async function createOrder(payload: {
 }): Promise<Order> {
   const admin = supabaseAdmin()
 
-  const { data: orderNum } = await admin.rpc('generate_order_number')
+  const { data: orderNum } = await admin.rpc('generate_market_order_number')
   const collectionCode = Math.random().toString(36).substring(2, 8).toUpperCase()
   const deadline = new Date(Date.now() + 7 * 24 * 60 * 60 * 1000).toISOString()
 
   const { data: order, error: orderError } = await admin
-    .from('orders')
+    .from('market_orders')
     .insert({
       order_number: orderNum,
-      user_id: payload.user_id,
+      user_id: payload.user_id === 'guest' ? null : payload.user_id,
       status: 'pending_payment',
       subtotal: payload.subtotal,
       service_fee: payload.service_fee,
@@ -156,16 +156,16 @@ export async function createOrder(payload: {
   const orderItems = payload.items.map((item) => ({
     order_id: order.id,
     product_id: item.product_id,
-    vendor_id: item.product?.vendor_id ?? '',
+    vendor_id: (item.product as any)?.vendor_id ?? null,
     quantity: item.quantity,
     unit_price: item.unit_price,
     total_price: item.unit_price * item.quantity,
     variant_selection: item.variant_selection,
-    product_name: item.product?.name ?? '',
-    product_image: item.product?.images?.[0] ?? null,
+    product_name: (item.product as any)?.name ?? '',
+    product_image: (item.product as any)?.images?.[0] ?? null,
   }))
 
-  const { error: itemsError } = await admin.from('order_items').insert(orderItems)
+  const { error: itemsError } = await admin.from('market_order_items').insert(orderItems)
   if (itemsError) throw itemsError
 
   return order as Order

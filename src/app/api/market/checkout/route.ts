@@ -117,7 +117,7 @@ export async function POST(req: NextRequest) {
     if (!psData.status) throw new Error(psData.message ?? 'Paystack error')
 
     // Store reference on order
-    await admin.from('orders').update({ paystack_reference: reference }).eq('id', order.id)
+    await admin.from('market_orders').update({ paystack_reference: reference }).eq('id', order.id)
 
     return NextResponse.json({
       order_number: order.order_number,

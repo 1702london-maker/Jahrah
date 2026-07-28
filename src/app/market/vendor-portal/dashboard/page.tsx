@@ -12,8 +12,8 @@ async function getVendorData(userId: string) {
   if (!vendor) return null
 
   const { data: recentOrders } = await admin
-    .from('order_items')
-    .select('*, order:orders(order_number,status,created_at,customer_name,total)')
+    .from('market_order_items')
+    .select('*, order:market_orders(order_number,status,created_at,customer_name,total)')
     .eq('vendor_id', vendor.id)
     .order('created_at', { ascending: false })
     .limit(10)

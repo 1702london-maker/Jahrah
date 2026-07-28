@@ -16,7 +16,7 @@ async function getData() {
     { data: applications },
     { data: products },
   ] = await Promise.all([
-    admin.from('orders').select('id,order_number,status,total,customer_name,created_at').order('created_at', { ascending: false }).limit(20),
+    admin.from('market_orders').select('id,order_number,status,total,customer_name,created_at').order('created_at', { ascending: false }).limit(20),
     admin.from('vendors').select('id,store_name,trust_score,trust_tier,total_sales,is_active').order('total_sales', { ascending: false }).limit(10),
     admin.from('vendor_applications').select('*').eq('status', 'submitted').order('created_at', { ascending: false }),
     admin.from('products').select('count', { count: 'exact', head: true }),
