@@ -1,3 +1,19 @@
+export type FulfilmentType = 'warehouse' | 'express' | 'sourced' | 'vendor_ships'
+
+export type VendorStatus = 'active' | 'suspended' | 'pending' | 'rejected'
+
+export type ProductCategory =
+  | 'fashion'
+  | 'beauty'
+  | 'food_drinks'
+  | 'electronics'
+  | 'home_living'
+  | 'health'
+  | 'art_crafts'
+  | 'kids'
+  | 'sports'
+  | 'automotive'
+
 export type TrustTier = 'new' | 'rising' | 'trusted' | 'elite'
 
 export interface Vendor {

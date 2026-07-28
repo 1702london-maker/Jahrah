@@ -174,3 +174,56 @@ export async function createOrder(payload: {
 
   return order as Order
 }
+
+// Cart items (server-side, for logged in users)
+export async function getCartItems(userId: string): Promise<CartItem[]> {
+  const { data, error } = await getClient()
+    .from('cart_items')
+    .select('*, product:products(id,name,slug,images,price,stock_status,vendor:vendors(id,store_name,slug))')
+    .eq('user_id', userId)
+  if (error) return []
+  return (data ?? []) as unknown as CartItem[]
+}
+
+// Vendor dashboard stats
+export async function getVendorDashboardStats(vendorId: string): Promise<{
+  totalSalesMonth: number
+  pendingOrders: number
+  productsLive: number
+  netEarningsMonth: number
+}> {
+  const admin = supabaseAdmin()
+  const monthStart = new Date()
+  monthStart.setDate(1)
+  monthStart.setHours(0, 0, 0, 0)
+
+  const [ordersRes, pendingRes, productsRes] = await Promise.all([
+    admin
+      .from('market_order_items')
+      .select('total_price, vendor_fulfilment_status')
+      .eq('vendor_id', vendorId)
+      .gte('created_at', monthStart.toISOString()),
+    admin
+      .from('market_order_items')
+      .select('id', { count: 'exact' })
+      .eq('vendor_id', vendorId)
+      .eq('vendor_fulfilment_status', 'pending'),
+    admin
+      .from('products')
+      .select('id', { count: 'exact' })
+      .eq('vendor_id', vendorId)
+      .eq('is_active', true),
+  ])
+
+  const items = ordersRes.data ?? []
+  const totalSalesMonth = items.length
+  const gross = items.reduce((s: number, i: any) => s + Number(i.total_price), 0)
+  const netEarningsMonth = Math.round(gross * 0.9)
+
+  return {
+    totalSalesMonth,
+    pendingOrders: pendingRes.count ?? 0,
+    productsLive: productsRes.count ?? 0,
+    netEarningsMonth,
+  }
+}
